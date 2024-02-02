@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en-US" id="html">
+<head> 
+    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-N6QRZFG"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-180x180.png" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+
+	const gtm4wp_scrollerscript_debugmode         = false;
+	const gtm4wp_scrollerscript_callbacktime      = 100;
+	const gtm4wp_scrollerscript_readerlocation    = 300;
+	const gtm4wp_scrollerscript_contentelementid  = "";
+	const gtm4wp_scrollerscript_scannertime       = 60;
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v21.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>How to configure BGP AS Path Prepending</title>
+	<meta name="description" content="AS Path Prepending is a common BGP technique to influence path selection. In this lesson, you will learn how to configure AS Path prepending." />
+	<link rel="canonical" href="https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="How to configure BGP AS Path Prepending" />
+	<meta property="og:description" content="AS Path Prepending is a common BGP technique to influence path selection. In this lesson, you will learn how to configure AS Path prepending." />
+	<meta property="og:url" content="https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending" />
+	<meta property="og:site_name" content="NetworkLessons.com" />
+	<meta property="article:published_time" content="2013-02-22T10:38:28+00:00" />
+	<meta property="article:modified_time" content="2023-12-13T14:54:02+00:00" />
+	<meta property="og:image" content="https://cdn.networklessons.com/wp-content/uploads/2013/02/international-network.jpg" />
+	<meta property="og:image:width" content="346" />
+	<meta property="og:image:height" content="346" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Rene Molenaar" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Rene Molenaar" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="2 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending","url":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending","name":"How to configure BGP AS Path Prepending","isPartOf":{"@id":"https://networklessons.com/#website"},"primaryImageOfPage":{"@id":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending#primaryimage"},"image":{"@id":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending#primaryimage"},"thumbnailUrl":"https://cdn.networklessons.com/wp-content/uploads/2013/02/international-network.jpg","datePublished":"2013-02-22T10:38:28+00:00","dateModified":"2023-12-13T14:54:02+00:00","author":{"@id":"https://networklessons.com/#/schema/person/a210ceb8a2b14b76e03c27d3c65850c2"},"description":"AS Path Prepending is a common BGP technique to influence path selection. In this lesson, you will learn how to configure AS Path prepending.","breadcrumb":{"@id":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending#primaryimage","url":"https://cdn.networklessons.com/wp-content/uploads/2013/02/international-network.jpg","contentUrl":"https://cdn.networklessons.com/wp-content/uploads/2013/02/international-network.jpg","width":346,"height":346,"caption":"International Network"},{"@type":"BreadcrumbList","@id":"https://networklessons.com/bgp/how-to-configure-bgp-as-path-prepending#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Networklessons.com","item":"https://networklessons.com/"},{"@type":"ListItem","position":2,"name":"BGP","item":"https://networklessons.com/bgp"},{"@type":"ListItem","position":3,"name":"How to configure BGP AS Path Prepending"}]},{"@type":"WebSite","@id":"https://networklessons.com/#website","url":"https://networklessons.com/","name":"NetworkLessons.com","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://networklessons.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://networklessons.com/#/schema/person/a210ceb8a2b14b76e03c27d3c65850c2","name":"Rene Molenaar","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://networklessons.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/8ff80757b1828be59e6c283e551c77be?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/8ff80757b1828be59e6c283e551c77be?s=96&d=mm&r=g","caption":"Rene Molenaar"},"description":"René - CCIE #41726 is the creator of Networklessons.com where he writes about networking topics like Cisco, Routing, Switching, Linux, Wireless &amp; Security. He also created GNS3Vault.com where people can study Cisco labs for free.","sameAs":["https://networklessons.com"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//player.vimeo.com' />
+<link rel='dns-prefetch' href='//cdn.networklessons.com' />
+<link rel='dns-prefetch' href='//googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//googleoptimize.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//tag.getdrip.com' />
+<link rel='dns-prefetch' href='//facebook.com' />
+
+<link href='https://cdn.networklessons.com' rel='preconnect' />
+<link rel='stylesheet' id='mp-theme-css' href='https://cdn.networklessons.com/wp-content/plugins/memberpress/css/ui/theme.css?ver=1.11.23' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://cdn.networklessons.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='arve-main-css' href='https://cdn.networklessons.com/wp-content/plugins/advanced-responsive-video-embedder/build/main.css?ver=b087dd41bba279baeb77' type='text/css' media='all' />
+<link rel='stylesheet' id='arve-pro-css' href='https://cdn.networklessons.com/wp-content/plugins/arve-pro/build/main.css?ver=09406cd2aee5447abf1a' type='text/css' media='all' />
+<link rel='stylesheet' id='cmd_post_nav-css' href='https://cdn.networklessons.com/wp-content/plugins/custom-menu-driven-prev-next-links/custom-menu-driven-prev-next-links.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='emnl_custom_styling_various_plugins-css' href='https://cdn.networklessons.com/wp-content/plugins/emnl-custom-css-various-plugins/emnl-custom-css-various-plugins.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urlconditionalmenu-css' href='https://cdn.networklessons.com/wp-content/plugins/emnl-url-conditional-menu/url-conditional-menu.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='affwp-forms-css' href='https://cdn.networklessons.com/wp-content/plugins/affiliate-wp/assets/css/forms.min.css?ver=2.20.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css' href='https://cdn.networklessons.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 100%;}div#ez-toc-container .ez-toc-title {font-weight: 700;}div#ez-toc-container ul li {font-size: 100%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}div#ez-toc-container {background: #f9f9f9;border: 1px solid #e6e6e6;}div#ez-toc-container p.ez-toc-title , #ez-toc-container .ez_toc_custom_title_icon , #ez-toc-container .ez_toc_custom_toc_icon {color: #000000;}div#ez-toc-container ul.ez-toc-list a {color: #5381b5;}div#ez-toc-container ul.ez-toc-list a:hover {color: #5381b5;}div#ez-toc-container ul.ez-toc-list a:visited {color: #5381b5;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<link rel='stylesheet' id='if-menu-site-css-css' href='https://cdn.networklessons.com/wp-content/plugins/if-menu/assets/if-menu-site.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='networklessons-style-css' href='https://cdn.networklessons.com/wp-content/themes/networklessons/dist/app.css?ver=1703241811' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-style-css' href='https://cdn.networklessons.com/wp-content/themes/networklessons/dist/magnific-popup/magnific-popup.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bellows-css' href='https://cdn.networklessons.com/wp-content/plugins/bellows-pro/pro/assets/css/bellows.min.css?ver=1.4.3' type='text/css' media='all' />
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-cookie-js-extra">
+/* <![CDATA[ */
+var affwp_scripts = {"ajaxurl":"https:\/\/networklessons.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/affiliate-wp/assets/js/jquery.cookie.min.js?ver=1.4.0" id="jquery-cookie-js"></script>
+<script type="text/javascript" id="affwp-tracking-js-extra">
+/* <![CDATA[ */
+var affwp_debug_vars = {"integrations":{"memberpress":"MemberPress"},"version":"2.20.0","currency":"USD","ref_cookie":"affwp_ref","visit_cookie":"affwp_ref_visit_id","campaign_cookie":"affwp_campaign"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js?ver=2.20.0" id="affwp-tracking-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/analytics-talk-content-tracking.js?ver=1.19.1" id="gtm4wp-scroll-tracking-js"></script>
+<link rel="https://api.w.org/" href="https://networklessons.com/wp-json/" /><link rel="alternate" type="application/json" href="https://networklessons.com/wp-json/wp/v2/posts/1219" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://networklessons.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel="alternate" type="application/json+oembed" href="https://networklessons.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetworklessons.com%2Fbgp%2Fhow-to-configure-bgp-as-path-prepending" />
+<link rel="alternate" type="text/xml+oembed" href="https://networklessons.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetworklessons.com%2Fbgp%2Fhow-to-configure-bgp-as-path-prepending&#038;format=xml" />
+<style id="bellows-custom-generated-css">
+
+/** Bellows Custom Tweaks (General Settings) **/
+
+/** Bellows Custom Tweaks (General Settings) **/
+/* More compact look of menu */
+.bellows .bellows-nav * { line-height: 1.75em; }
+.bellows .bellows-nav .bellows-submenu .bellows-target { padding-left: 20px;}
+.bellows .bellows-nav .bellows-target,
+.bellows .bellows-nav .bellows-submenu .bellows-target { padding: 2px;}
+
+/* Move toggle icons to left instead of right of text labels */
+.bellows .bellows-nav .bellows-subtoggle { width: 30px; left:0; }
+.bellows .bellows-nav .bellows-menu-item > .bellows-target > .bellows-target-text { margin-left: 30px; }
+.bellows .bellows-nav .bellows-subtoggle .fa { top: 40%; }
+
+/* Move toggle icons and lower level items to the right */
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-1 .bellows-subtoggle { left: 25px; }
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-1 .bellows-target { padding-left: 25px; }
+
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-2 .bellows-subtoggle { left: 50px; }
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-2 .bellows-target { padding-left: 50px; }
+
+
+/* SIDEBAR ONLY STYLING */
+
+/* Set all text to default black */
+#sidebar .bellows .bellows-nav a.bellows-target { color: #000000 }
+
+/* Set parent menu items bold and colored */
+#sidebar .bellows.bellows-main .bellows-nav .bellows-current-menu-item > .bellows-target,
+#sidebar .bellows.bellows-main .bellows-nav .bellows-current-menu-ancestor > .bellows-target { color:#557fae; font-weight: bold; }
+
+/* Set current post bold and colored */
+#sidebar .bellows .bellows-current-menu-item { font-weight: bold; color:#557fae; }
+
+/* Toggle icons on same height */
+#sidebar .bellows .bellows-nav .bellows-subtoggle .fa { top: 44%; }
+
+
+
+/* Status: Loaded from Transient */
+
+</style>		<script type="text/javascript">
+		var AFFWP = AFFWP || {};
+		AFFWP.referral_var = 'affid';
+		AFFWP.expiration = 1;
+		AFFWP.debug = 0;
+
+
+		AFFWP.referral_credit_last = 0;
+		</script>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to manual -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"visitorLoginState":"logged-in","visitorType":"subscriber","visitorEmail":"gicrxcmznwjoxpllix@cazlg.com","visitorEmailHash":"4a598d872f4e23cd5a7677550bb37ae57864e5d2f277a9221f04a01c30fa046c","visitorId":57643,"visitorIP":"45.84.136.112","pagePostType":"post","pagePostType2":"single-post","pageCategory":["bgp","ccie-enterprise-infrastructure","ccie-routing-switching","ccie-routing-switching-written","ccnp-enarsi-300-410","ccnp-encor-350-401","ccnp-route"],"IsActiveMember":"true","UserFullName":"Anass Anass"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWFSBS');
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png?v=69P4gG4Gpq">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png?v=69P4gG4Gpq">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png?v=69P4gG4Gpq">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/site.webmanifest?v=69P4gG4Gpq">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=69P4gG4Gpq" color="#5381b5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico?v=69P4gG4Gpq">
+<meta name="msapplication-TileColor" content="#5381b5">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=69P4gG4Gpq">
+<meta name="theme-color" content="#5381b5">		<style>
+			.algolia-search-highlight {
+				background-color: #fffbcc;
+				border-radius: 2px;
+				font-style: normal;
+			}
+		</style>
+		<script type="application/ld+json" class="emnl-schema-breadcrumbs">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 0,"name": "Home","item": "https://networklessons.com"},{"@type": "ListItem","position": 1,"name": "Cisco","item": "https://networklessons.com/cisco"},{"@type": "ListItem","position": 2,"name": "CCNP ENARSI 300-410","item": "https://networklessons.com/cisco/ccnp-enarsi-300-410"},{"@type": "ListItem","position": 3,"name": "How to configure BGP AS Path Prepending","item": "https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-bgp-as-path-prepending"}]}</script>
+</head>
+
+
+<body class="post-template-default single single-post postid-1219 single-format-standard logged-in affwp-affiliate-area " data-theme="light">
+
+<!-- GTM Container placement set to manual -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWFSBS" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script>
+  if ( localStorage.getItem('siteTheme') ) {
+    document.body.setAttribute('data-theme', localStorage.getItem('siteTheme'));
+  }
+</script>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+	<header class="site-header">
+		        <div class="site-header-inner">
+            <div class="container">
+                <div class="row sm-gutters main-row">
+                    <div class="col-lg-4 col-8">
+                        <a href="https://networklessons.com/" class="logo">
+                            <img width="524" height="141" src="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/logo.svg" alt="NetworkLessons.com" />
+                        </a>
+                    </div>
+                                                                <div class="col-lg-8 col-4 col-navigation">
+                            <nav id="site-navigation" class="main-navigation">
+                                <div class="menu-primary-container"><ul id="primary-menu" class="menu"><li id="menu-item-10143" class="expanded menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10143"><a href="https://networklessons.com/courses">Courses <span class="menu-item-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-59830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-59830"><a href="https://networklessons.com/cisco">Cisco <span class="menu-item-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-65214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65214"><a href="https://networklessons.com/cisco/ccna-200-301">CCNA 200-301</a></li>
+		<li id="menu-item-65219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65219"><a href="https://networklessons.com/cisco/ccnp-encor-350-401">CCNP ENCOR 350-401 v1.1</a></li>
+		<li id="menu-item-65218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65218"><a href="https://networklessons.com/cisco/ccnp-enarsi-300-410">CCNP ENARSI 300-410 v1.1</a></li>
+		<li id="menu-item-65217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65217"><a href="https://networklessons.com/cisco/ccie-enterprise-infrastructure">CCIE Enterprise Infrastructure</a></li>
+		<li id="menu-item-65216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65216"><a href="https://networklessons.com/cisco/asa-firewall">ASA Firewall</a></li>
+		<li id="menu-item-65774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65774"><a href="https://networklessons.com/cisco/cisco-sd-wan">Cisco SD-WAN</a></li>
+	</ul>
+</li>
+	<li id="menu-item-59831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-59831"><a href="https://networklessons.com/routing-switching">Routing &#038; Switching <span class="menu-item-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-65232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65232"><a href="https://networklessons.com/subnetting">Subnetting</a></li>
+		<li id="menu-item-65233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65233"><a href="https://networklessons.com/switching">Switching</a></li>
+		<li id="menu-item-65231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65231"><a href="https://networklessons.com/spanning-tree">Spanning-Tree</a></li>
+		<li id="menu-item-65222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65222"><a href="https://networklessons.com/frame-relay">Frame-Relay</a></li>
+		<li id="menu-item-65230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65230"><a href="https://networklessons.com/rip">RIP</a></li>
+		<li id="menu-item-65221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65221"><a href="https://networklessons.com/eigrp">EIGRP</a></li>
+		<li id="menu-item-65227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65227"><a href="https://networklessons.com/ospf">OSPF</a></li>
+		<li id="menu-item-65224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65224"><a href="https://networklessons.com/is-is">IS-IS</a></li>
+		<li id="menu-item-65215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65215"><a href="https://networklessons.com/bgp">BGP</a></li>
+		<li id="menu-item-65226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65226"><a href="https://networklessons.com/multicast">Multicast</a></li>
+		<li id="menu-item-65223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65223"><a href="https://networklessons.com/ipv6">IPv6</a></li>
+		<li id="menu-item-65229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65229"><a href="https://networklessons.com/quality-of-service">Quality of Service</a></li>
+		<li id="menu-item-65225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65225"><a href="https://networklessons.com/mpls">MPLS</a></li>
+	</ul>
+</li>
+	<li id="menu-item-65228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65228"><a href="https://networklessons.com/python">Python</a></li>
+	<li id="menu-item-65234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65234"><a href="https://networklessons.com/uncategorized">Miscellaneous</a></li>
+	<li id="menu-item-64907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64907"><a href="#">Legacy <span class="menu-item-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-33774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33774"><a href="https://networklessons.com/cisco/ccna-routing-switching-icnd1-100-105">CCNA R&#038;S ICND1 100-105</a></li>
+		<li id="menu-item-40575" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40575"><a href="https://networklessons.com/cisco/ccna-routing-switching-icnd2-200-105">CCNA R&#038;S ICND2 200-105</a></li>
+		<li id="menu-item-20090" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20090"><a href="https://networklessons.com/cisco/ccnp-route">CCNP ROUTE</a></li>
+		<li id="menu-item-20092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20092"><a href="https://networklessons.com/cisco/ccnp-switch">CCNP SWITCH</a></li>
+		<li id="menu-item-20093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20093"><a href="https://networklessons.com/cisco/ccnp-tshoot">CCNP TSHOOT</a></li>
+		<li id="menu-item-20089" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20089"><a href="https://networklessons.com/cisco/ccie-routing-switching">CCIE R&#038;S</a></li>
+		<li id="menu-item-38428" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-38428"><a href="https://networklessons.com/cisco/ccie-routing-switching-written">CCIE R&#038;S Written</a></li>
+		<li id="menu-item-65220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65220"><a href="https://networklessons.com/cisco/evolving-technologies">Evolving Technologies</a></li>
+	</ul>
+</li>
+	<li id="menu-item-8339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8339"><a href="https://networklessons.com/new-lessons"><i class="fa fa-plus"></i> New Lessons</a></li>
+	<li id="menu-item-64135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64135"><a href="https://networklessons.com/updated-lessons"><i class="fas fa-pen"></i> Updated Lessons</a></li>
+	<li id="menu-item-7347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7347"><a href="https://networklessons.com/member-ideas"><i class="fa fa-lightbulb-o"></i> Lesson Ideas</a></li>
+</ul>
+</li>
+<li id="menu-item-8715" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8715"><a href="https://forum.networklessons.com">Forum</a></li>
+<li id="menu-item-23483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23483"><a href="https://networklessons.com/support">Support</a></li>
+<li id="menu-item-65967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65967"><a href="#">Tools <span class="menu-item-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-65968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65968"><a href="https://www.cloudshark.org/collections/WTRpgLI-GQSDfgzkQixICg">Packet Captures</a></li>
+	<li id="menu-item-65969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65969"><a href="https://notes.networklessons.com">Notes</a></li>
+	<li id="menu-item-65970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65970"><a href="https://networklessons.com/tools-and-resources">Resources</a></li>
+	<li id="menu-item-68327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68327"><a href="https://networklessons.com/networklessons-exams">Practice Exams</a></li>
+</ul>
+</li>
+<li id="menu-item-22148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22148"><a href="#"><i class="fa fa-user"></i> <span class="menu-item-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-5629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5629"><a href="https://networklessons.com/myaccount">My Account Settings</a></li>
+	<li id="menu-item-68092" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68092"><a href="https://networklessons.com/member-dashboard">Member Dashboard</a></li>
+	<li id="menu-item-22285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22285"><a href="https://networklessons.com/upgrade-to-annual-membership"><b><font color="#FFC469">UPGRADE TO ANNUAL &#038; Get 2 Months FREE!</font></b></a></li>
+	<li id="menu-item-56969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56969"><a href="https://networklessons.com/wp-login.php?action=logout">Logout</a></li>
+</ul>
+</li>
+</ul></div>                                <div class="main-navigation-close">
+                                    <i class="far fa-times"></i>
+                                </div>
+                            </nav>
+                            <div class="main-navigation-toggle">
+                                <span class="icon"></span>
+                            </div>
+                            <div class="d-none d-xl-block">
+                                
+
+<form role="search" method="get" class="search-form" action="https://networklessons.com/">
+    <label for="search-form-65af02487b7dd" class="sr-only">
+        <span class="screen-reader-text">Search for:</span>
+    </label>
+
+    <div class="input-group">
+        <input type="search" id="search-form-65af02487b7dd" class="search-field form-control" placeholder="Search &hellip;" value="" name="s" />
+        <div class="input-group-append">
+            <button type="submit" class="search-submit btn btn-white">
+                <span class="screen-reader-text">Search</span>
+                <i class="far fa-search"></i>
+            </button>
+        </div>
+    </div>
+</form>                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="fullpage-overlay main-navigation-overlay"></div>
+	</header>
+    
+            <div class="d-xl-none">
+            
+
+<form role="search" method="get" class="search-form" action="https://networklessons.com/">
+    <label for="search-form-65af02487b85a" class="sr-only">
+        <span class="screen-reader-text">Search for:</span>
+    </label>
+
+    <div class="input-group">
+        <input type="search" id="search-form-65af02487b85a" class="search-field form-control" placeholder="Search &hellip;" value="" name="s" />
+        <div class="input-group-append">
+            <button type="submit" class="search-submit btn btn-white">
+                <span class="screen-reader-text">Search</span>
+                <i class="far fa-search"></i>
+            </button>
+        </div>
+    </div>
+</form>        </div>
+    
+	<div class="site-content container">
+    <div class="breadcrumbs" style="font-size: 12px;">You are here: <a href="https://networklessons.com">Home</a> » <a href="https://networklessons.com/cisco">Cisco</a> » <a href="https://networklessons.com/cisco/ccnp-enarsi-300-410">CCNP ENARSI 300-410</a></div>	<div class="site-content-row row">
+	<div id="primary" class="content-area col-md-8">
+		<main id="main" class="site-main">
+                            <div class="site-actions-toolbar d-md-none">
+                    <div class="site-action js--dark-mode">
+                        <i class="far fa-adjust"></i>
+                    </div>
+                </div>
+            
+		
+<article id="post-1219" class="main-post post-1219 post type-post status-publish format-standard has-post-thumbnail hentry category-bgp category-ccie-enterprise-infrastructure category-ccie-routing-switching category-ccie-routing-switching-written category-ccnp-enarsi-300-410 category-ccnp-encor-350-401 category-ccnp-route tag-as-path">
+	<header class="entry-header">
+                            <h1 class="entry-title">How to configure BGP AS Path Prepending</h1>        	</header>
+	<div class="entry-content">
+                    <div class="the-content">
+                <p>The fourth <a href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-attributes-and-path-selection">BGP attribute</a> is called AS Path:</p>
+<ul>
+<li>BGP prefers the <b>shortest AS path</b> to get to a destination. Less is more!</li>
+<li>We can manipulate this by using <b>AS path prepending.</b></li>
+</ul>
+<p>Let me show you an example:</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-35951 size-full" src="https://cdn.networklessons.com/wp-content/uploads/2013/02/bgp-as-path-prepend.png" alt="bgp as path prepend" width="656" height="592" srcset="https://cdn.networklessons.com/wp-content/uploads/2013/02/bgp-as-path-prepend.png 656w, https://cdn.networklessons.com/wp-content/uploads/2013/02/bgp-as-path-prepend-300x271.png 300w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p>In my example AS 1 wants to make sure traffic enters the autonomous system through R2. We can add our own autonomous system number multiple times, so the as-path becomes longer. Since BGP prefers a shorter AS path, we can influence our routing. This is called <b>AS path pretending. </b></p>
+<h2>Configuration</h2>
+<p>Let&#8217;s see what this looks like on Cisco routers. This is the topology that I will use:</p>
+<p><img decoding="async" class="alignnone wp-image-35953 size-full" src="https://cdn.networklessons.com/wp-content/uploads/2013/02/bgp-as-path-prepend-lab.png" alt="bgp as path prepend lab" width="506" height="577" srcset="https://cdn.networklessons.com/wp-content/uploads/2013/02/bgp-as-path-prepend-lab.png 506w, https://cdn.networklessons.com/wp-content/uploads/2013/02/bgp-as-path-prepend-lab-263x300.png 263w" sizes="(max-width: 506px) 100vw, 506px" /></p>
+<p>Above we have 3 routers. R1 and R3 are both in AS 1 advertising the same network (1.1.1.0/24) to R2. We can use AS Path prepending to make R2 prefer a certain path.</p>
+<p>Let&#8217;s start with a BGP configuration:</p>
+<pre><code>R1(config)#<strong>router bgp 1</strong>
+R1(config-router)#<strong>bgp router-id 1.1.1.1</strong>
+R1(config-router)#<strong>neighbor 192.168.12.2 remote-as 2</strong></code></pre>
+<pre><code>R3(config)#<strong>router bgp 1</strong>
+R3(config-router)#<strong>bgp router-id 3.3.3.3</strong>
+R3(config-router)#<strong>neighbor 192.168.23.2 remote-as 2</strong></code></pre>
+<pre><code>R2(config)#<strong>router bgp 2</strong>
+R2(config-router)#<strong>neighbor 192.168.12.1 remote-as 1</strong>
+R2(config-router)#<strong>neighbor 192.168.23.3 remote-as 1</strong></code></pre>
+<p>This is just a basic configuration. Now we can advertise network 1.1.1.0 /24 on both R1 and R3:</p>
+<pre><code>R1(config)#<strong>router bgp 1</strong>
+R1(config-router)#<strong>network 1.1.1.0 mask 255.255.255.0</strong></code></pre>
+<pre><code>R3(config)#<strong>router bgp 1</strong>
+R3(config-router)#<strong>network 1.1.1.0 mask 255.255.255.0</strong></code></pre>
+<p>Let&#8217;s check the BGP table:</p>
+<pre><code>R2#<strong>show ip bgp</strong> 
+BGP table version is 2, local router ID is 192.168.23.2
+Status codes: s suppressed, d damped, h history, * valid, &gt; best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight <span style="color: #ff0000;">Path</span>
+<span style="color: #ff0000;">*  1.1.1.0/24       192.168.23.3</span>             0             0 <span style="color: #ff0000;">1</span> i
+<span style="color: #ff0000;">*&gt;                  192.168.12.1</span>             0             0 <span style="color: #ff0000;">1</span> i</code></pre>
+<p>In the table above, you can see that it prefers 192.168.12.1 as its path. Let’s change the AS path so that we’ll use 192.168.23.3 as the preferred path. Here is an example:</p>
+<pre><code>R1(config)#<strong>route-map PREPEND permit 10</strong>
+R1(config-route-map)#<strong>set as-path prepend 1 1 1 1 1</strong>
+R1(config-route-map)#<strong>exit</strong>
+R1(config)#<strong>router bgp 1</strong>
+R1(config-router)#<strong>neighbor 192.168.12.2 route-map PREPEND out</strong></code></pre>
+<p>First, create a route-map and use <code><strong>set as-path prepend</strong></code> to add your own AS number multiple times.<br />
+Don’t forget to add the route-map to your BGP neighbor configuration, and since you are sending this to your remote neighbor, it should be <strong>outbound</strong>! Let&#8217;s check the BGP table:</p>
+<pre><code>R2#<strong>show ip bgp</strong> 
+BGP table version is 2, local router ID is 192.168.23.2
+Status codes: s suppressed, d damped, h history, * valid, &gt; best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight <span style="color: #ff0000;">Path</span>
+<span style="color: #ff0000;">*&gt; 1.1.1.0/24       192.168.23.3</span>             0             0 <span style="color: #ff0000;">1</span> i
+*                   192.168.12.1             0             0 <span style="color: #ff0000;">1 1 1 1 1 1</span> i</code></pre>
+<p>Now we see that 192.168.23.3 is our next hop IP address. You can also see that the AS Path has become longer for the second entry. That&#8217;s it!<br />
+<div class="responsive-tabs">
+<p class="tabtitle">Configurations</p>
+<div class="tabcontent">
+</p>
+<p>Want to take a look for yourself? Here you will find the final configuration of each device.<br />
+
+</div><p class="tabtitle">R1</p>
+<div class="tabcontent">
+</p>
+<pre><code>hostname R1
+!
+interface Loopback 0
+ ip address 1.1.1.1 255.255.255.0
+!
+interface fastEthernet2/0
+ ip address 192.168.12.1 255.255.255.0
+!
+router bgp 1
+ bgp router-id 1.1.1.1
+ neighbor 192.168.12.2 remote-as 2
+ network 1.1.1.0 mask 255.255.255.0
+ neighbor 192.168.12.2 route-map PREPEND out
+!
+route-map PREPEND permit 10
+ set as-path prepend 1 1 1 1 1
+end</code></pre>
+
+</div><p class="tabtitle">R2</p>
+<div class="tabcontent">
+
+<pre><code>hostname R2
+!
+interface fastEthernet0/0
+ ip address 192.168.12.2 255.255.255.0
+!
+interface fastEthernet1/0
+ ip address 192.168.23.2 255.255.255.0
+!
+router bgp 2
+ neighbor 192.168.12.1 remote-as 1
+ neighbor 192.168.23.3 remote-as 1
+!
+end</code></pre>
+
+</div><p class="tabtitle">R3</p>
+<div class="tabcontent">
+
+<pre><code>hostname R3
+!
+interface Loopback 0
+ ip address 1.1.1.1 255.255.255.0
+!
+interface fastEthernet2/0
+ ip address 192.168.23.3 255.255.255.0
+!
+router bgp 1
+ bgp router-id 3.3.3.3
+ neighbor 192.168.23.2 remote-as 2
+ network 1.1.1.0 mask 255.255.255.0
+!
+end</code></pre>
+<p></div></div><br />
+That&#8217;s all there is for now! If you have any questions, leave a comment&#8230;</p>
+            </div>
+                	</div>
+</article>
+		</main>
+	</div>
+
+
+<div class="widget-area col-md-4">
+            <div class="site-actions-toolbar d-none d-md-flex">
+            <div class="site-action js--dark-mode">
+                <i class="far fa-adjust"></i>
+            </div>
+        </div>
+        <aside id="secondary">
+        <section id="text-6" class="widget widget_text">			<div class="textwidget"><div class="urlspecificmenu-toggle">Lessons</div><div class="fullpage-overlay urlspecificmenu-overlay"></div><div class="urlspecificmenu"><div class="urlspecificmenu-close"><i class="far fa-times"></i></div>
+				<h2>Course Contents</h2><p>CCNP ENARSI 300-410</p><nav id="bellows-main-9853" class="bellows bellows-nojs bellows-main bellows-source-menu bellows-align-full bellows-skin-none bellows-type-accordion bellows-expand-current"><ul id="menu-ccnp-enarsi-300-410" class="bellows-nav" data-bellows-config="main"><li id="menu-item-61372" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61372 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 1: Routing Fundamentals</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-61380" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61380 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">1.1: Routing Concepts</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61392" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61392 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-route-summarization" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to Route Summarization</span></a></li>
+		<li id="menu-item-61567" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61567 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/route-summarization" class="bellows-target"><span class="bellows-target-title bellows-target-text">Route Summarization</span></a></li>
+		<li id="menu-item-61393" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61393 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-summarization-example" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 Summarization</span></a></li>
+		<li id="menu-item-61389" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61389 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-filter-prefixes-with-distribute-list" class="bellows-target"><span class="bellows-target-title bellows-target-text">How to filter prefixes with distribute-list</span></a></li>
+		<li id="menu-item-61385" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61385 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-route-maps" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to Route-Maps</span></a></li>
+		<li id="menu-item-61386" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61386 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-route-map-filtering" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Route-Map Filtering</span></a></li>
+		<li id="menu-item-61387" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61387 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-route-tagging" class="bellows-target"><span class="bellows-target-title bellows-target-text">How to configure Route Tagging</span></a></li>
+		<li id="menu-item-61390" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61390 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-redistribution" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to Redistribution</span></a></li>
+		<li id="menu-item-61953" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61953 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bidirectional-forwarding-detection-bfd" class="bellows-target"><span class="bellows-target-title bellows-target-text">Bidirectional Forwarding Detection (BFD)</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61381" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61381 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">1.2: Troubleshooting Routing</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-62586" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62586 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshoot-networks" class="bellows-target"><span class="bellows-target-title bellows-target-text">How to troubleshoot networks</span></a></li>
+		<li id="menu-item-62564" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62564 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/gre-tunnel-recursive-routing-error" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting Recursive Routing Error</span></a></li>
+		<li id="menu-item-61384" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61384 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-metric-redistribution" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting Metric Redistribution</span></a></li>
+		<li id="menu-item-61383" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61383 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-ad-redistribution" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting AD Redistribution</span></a></li>
+		<li id="menu-item-61391" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61391 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-ipv6-redistribution" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting IPv6 Redistribution</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61382" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61382 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">1.3: Policy Based Routing</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61398" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61398 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-policy-based-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to Policy Based Routing (PBR)</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-61373" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61373 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 2: EIGRP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-62515" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62515 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-eigrp" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to EIGRP</span></a></li>
+	<li id="menu-item-61402" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61402 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-neighbor-and-topology-table-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Neighbor and Topology Table</span></a></li>
+	<li id="menu-item-61400" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61400 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/detailed-look-of-eigrp-neighbor-adjacency" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Neighbor Adjacency</span></a></li>
+	<li id="menu-item-62516" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62516 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-packets-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Packets Explained</span></a></li>
+	<li id="menu-item-62517" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62517 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-hold-time-hello-packets" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Hold Time Hello Packets</span></a></li>
+	<li id="menu-item-61399" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61399 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">2.1: Basic EIGRP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61407" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61407 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/basic-eigrp-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">Basic EIGRP Configuration</span></a></li>
+		<li id="menu-item-61401" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61401 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-static-neighbor" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Static Neighbor</span></a></li>
+		<li id="menu-item-62519" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62519 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-router-id" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Router ID</span></a></li>
+		<li id="menu-item-62520" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62520 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-passive-interface" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Passive Interface</span></a></li>
+		<li id="menu-item-62529" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62529 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-default-network-route" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Default Network Route</span></a></li>
+		<li id="menu-item-61403" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61403 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-named-mode-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Named Mode</span></a></li>
+		<li id="menu-item-61417" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61417 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ipv6-eigrp-on-cisco-ios-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP IPv6 Configuration</span></a></li>
+		<li id="menu-item-61404" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61404 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-eigrp-authentication" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Authentication</span></a></li>
+		<li id="menu-item-62521" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62521 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-wide-metrics" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Wide Metrics</span></a></li>
+		<li id="menu-item-61394" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61394 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-eigrp-summarization" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Summarization Configuration</span></a></li>
+		<li id="menu-item-62526" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62526 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-auto-summary" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Auto-Summary</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61405" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61405 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">2.2: Advanced EIGRP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61415" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61415 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-dual-fsm-finite-state-machine" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Dual Finite State Machine (FSM)</span></a></li>
+		<li id="menu-item-61408" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61408 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-authentication-per-neighbor" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Authentication per Neighbor</span></a></li>
+		<li id="menu-item-61410" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61410 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-variance-command-example" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Variance</span></a></li>
+		<li id="menu-item-61411" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61411 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-unequal-cost-load-balancing" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Unequal Cost Load Balancing</span></a></li>
+		<li id="menu-item-61412" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61412 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-k-values-formula" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP K values Formula</span></a></li>
+		<li id="menu-item-61413" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61413 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-k-values-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP K Values Configuration</span></a></li>
+		<li id="menu-item-61409" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61409 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-stub-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Stub</span></a></li>
+		<li id="menu-item-62530" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62530 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-external-route-path-selection" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP External Route Path Selection</span></a></li>
+		<li id="menu-item-62532" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62532 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-ip-bandwidth-percent" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP IP Bandwidth Percent</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61418" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61418 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">2.3: Troubleshooting EIGRP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61414" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61414 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-eigrp-neighbor-adjacency" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshoot EIGRP Neighbor Adjacency</span></a></li>
+		<li id="menu-item-62527" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62527 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-eigrp-route-advertisement" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting EIGRP Route Advertisement</span></a></li>
+		<li id="menu-item-61416" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61416 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/eigrp-queries-and-stuck-in-active" class="bellows-target"><span class="bellows-target-title bellows-target-text">EIGRP Queries and Stuck in Active (SIA)</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-61374" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61374 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 3: OSPF</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-62533" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62533 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-ospf" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to OSPF</span></a></li>
+	<li id="menu-item-61419" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61419 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">3.1: Basic OSPF</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61423" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61423 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-packets-and-neighbor-discovery" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Packets and Neighbor Discovery</span></a></li>
+		<li id="menu-item-62537" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62537 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-hello-and-dead-interval" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Hello and Dead Interval</span></a></li>
+		<li id="menu-item-62534" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62534 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-drbdr-election-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF DR/BDR Election</span></a></li>
+		<li id="menu-item-62535" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62535 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-lsas-and-lsdb-flooding-tutorial" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF LSA and LSDB Flooding</span></a></li>
+		<li id="menu-item-61424" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61424 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-router-id" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Router ID</span></a></li>
+		<li id="menu-item-62536" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62536 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-passive-interface" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Passive Interface</span></a></li>
+		<li id="menu-item-61425" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61425 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-lsa-types-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF LSA Types Explained</span></a></li>
+		<li id="menu-item-62539" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62539 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-default-route" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Default Route</span></a></li>
+		<li id="menu-item-61395" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61395 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-summarization" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Summarization Configuration</span></a></li>
+		<li id="menu-item-61431" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61431 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-plain-text-authentication" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Plain-Text Authentication</span></a></li>
+		<li id="menu-item-61432" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61432 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-md5-authentication" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF MD5 Authentication</span></a></li>
+		<li id="menu-item-62538" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62538 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-hmac-sha-extended-authentication" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF HMAC SHA Extended Authentication</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61420" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61420 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">3.2: Advanced OSPF</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61426" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61426 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-stub-area" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Stub Area</span></a></li>
+		<li id="menu-item-61427" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61427 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-totally-stub-area" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Totally Stub Area</span></a></li>
+		<li id="menu-item-61428" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61428 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-nssa-not-so-stubby-area" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Not-So-Stubby-Area (NSSA)</span></a></li>
+		<li id="menu-item-61429" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61429 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-totally-nssa-area" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Totally NSSA Area</span></a></li>
+		<li id="menu-item-61430" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61430 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-path-selection-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Path Selection Explained</span></a></li>
+		<li id="menu-item-61436" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61436 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-broadcast-network-type-over-frame-relay" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Network Type Broadcast</span></a></li>
+		<li id="menu-item-61437" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61437 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-non-broadcast-network-type-over-frame-relay" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Network Type Non-Broadcast</span></a></li>
+		<li id="menu-item-61433" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61433 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-point-to-point-network-type-over-frame-relay" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Network Type Point-to-Point</span></a></li>
+		<li id="menu-item-61434" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61434 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-point-to-multipoint-network-type-over-frame-relay" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Network Type Point-to-Multipoint</span></a></li>
+		<li id="menu-item-61435" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61435 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-point-to-multipoint-non-broadcast-network-type-over-frame-relay" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Point-to-Multipoint Non-Broadcast</span></a></li>
+		<li id="menu-item-61438" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61438 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-next-hop-ip-address-with-different-network-types" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Next Hop with different Network Types</span></a></li>
+		<li id="menu-item-61439" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61439 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ospf-virtual-link" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Virtual Link (VL)</span></a></li>
+		<li id="menu-item-61440" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61440 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospf-virtual-link-authentication" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPF Virtual Link Authentication</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61421" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61421 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">3.3: Troubleshooting OSPF</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61441" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61441 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-ospf-neighbor-adjacency" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting OSPF Neighbor Adjacency</span></a></li>
+		<li id="menu-item-61442" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61442 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-ospf-route-advertisement" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting OSPF Route Advertisement</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61422" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61422 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">3.4: OSPFv3</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61566" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61566 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospfv2-vs-ospfv3" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPFv2 vs OSPFv3</span></a></li>
+		<li id="menu-item-61444" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61444 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospfv3-for-ipv4-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPFv3 IPv4 Configuration</span></a></li>
+		<li id="menu-item-61443" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61443 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ipv6-ospfv3-on-cisco-ios-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPFv3 IPV6 Configuration</span></a></li>
+		<li id="menu-item-62540" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62540 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-ospfv3-default-route" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPFv3 IPv6 Default Route</span></a></li>
+		<li id="menu-item-62541" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62541 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ospfv3-authentication-and-encryption" class="bellows-target"><span class="bellows-target-title bellows-target-text">OSPFv3 Authentication and Encryption</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-61375" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-current-menu-ancestor bellows-menu-item-has-children bellows-menu-item-61375 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 4: BGP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-62554" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62554 bellows-item-level-1"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-bgp" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to BGP</span></a></li>
+	<li id="menu-item-61446" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61446 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">4.1: Basic BGP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61445" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61445 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-ebgp-external-bgp" class="bellows-target"><span class="bellows-target-title bellows-target-text">External BGP (eBGP) Configuration</span></a></li>
+		<li id="menu-item-61458" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61458 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ebgp-multihop" class="bellows-target"><span class="bellows-target-title bellows-target-text">eBGP Multi-Hop</span></a></li>
+		<li id="menu-item-61450" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61450 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/internal-bgp-border-gateway-protocol-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">Internal BGP (iBGP)</span></a></li>
+		<li id="menu-item-61455" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61455 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-next-hop-self" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Next Hop Self</span></a></li>
+		<li id="menu-item-62556" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62556 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-advertise-networks-in-bgp" class="bellows-target"><span class="bellows-target-title bellows-target-text">How to advertise networks in BGP</span></a></li>
+		<li id="menu-item-62555" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62555 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-read-the-bgp-table" class="bellows-target"><span class="bellows-target-title bellows-target-text">How to read the BGP Table</span></a></li>
+		<li id="menu-item-61451" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61451 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-neighbor-adjacency-states" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Neighbor Adjacency States</span></a></li>
+		<li id="menu-item-61452" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61452 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-messages" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Messages</span></a></li>
+		<li id="menu-item-61453" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61453 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-private-and-public-as-range" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Private and Public AS Range</span></a></li>
+		<li id="menu-item-61454" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61454 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-synchronization" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Synchronization</span></a></li>
+		<li id="menu-item-62557" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62557 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-auto-summary" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Auto-Summary</span></a></li>
+		<li id="menu-item-62562" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62562 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-aggregate-as-set" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Aggregate AS-SET</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61447" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61447 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">4.2: Advanced BGP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61456" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61456 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-next-hop-address-tracking" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Next Hop Self Address Tracking</span></a></li>
+		<li id="menu-item-61461" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61461 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-peer-groups-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Peer Groups</span></a></li>
+		<li id="menu-item-61469" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61469 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-extended-access-list-filtering" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Extended Access-list Filtering</span></a></li>
+		<li id="menu-item-61465" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61465 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-regular-expressions-examples" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Regular Expression Examples</span></a></li>
+		<li id="menu-item-61468" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61468 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-as-path-filter-example" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP AS Path Filter</span></a></li>
+		<li id="menu-item-61466" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61466 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-prevent-transit-as" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Prevent Transit AS</span></a></li>
+		<li id="menu-item-62558" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62558 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-communities-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Communities</span></a></li>
+		<li id="menu-item-62559" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62559 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-community-no-advertise" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Community No-Advertise</span></a></li>
+		<li id="menu-item-62560" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62560 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-community-no-export" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Community No-Export</span></a></li>
+		<li id="menu-item-62561" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62561 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-community-local-as" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Community Local AS</span></a></li>
+		<li id="menu-item-61459" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61459 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-4-byte-number" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP 4-byte AS Number</span></a></li>
+		<li id="menu-item-61460" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61460 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-remove-private-as" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Remove Private AS</span></a></li>
+		<li id="menu-item-61464" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61464 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-route-reflector" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Route Reflector</span></a></li>
+		<li id="menu-item-62553" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62553 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-confederation-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Confederations</span></a></li>
+		<li id="menu-item-61462" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61462 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-route-refresh-capability" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Route Refresh Capability</span></a></li>
+		<li id="menu-item-61457" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61457 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/multiprotocol-bgp-mp-bgp-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">Multi-Protocol BGP (MP-BGP)</span></a></li>
+		<li id="menu-item-61467" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61467 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-ipv6-route-filtering-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP IPv6 Route Filtering</span></a></li>
+		<li id="menu-item-61463" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61463 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-pic-prefix-independent-convergence-core-edge" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Prefix Independent Convergence (PIC)</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61470" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-current-menu-ancestor bellows-current-menu-parent bellows-menu-item-has-children bellows-menu-item-61470 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">4.3: BGP Path Selection</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61472" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61472 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-attributes-and-path-selection" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Attributes and Path Selection</span></a></li>
+		<li id="menu-item-61473" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61473 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-bgp-weight-attribute" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Weight Attribute</span></a></li>
+		<li id="menu-item-61474" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61474 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-bgp-local-preference-attribute" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Local Preference Attribute</span></a></li>
+		<li id="menu-item-70346" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-70346 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-attribute-locally-originated" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Attribute Locally Originated</span></a></li>
+		<li id="menu-item-61475" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-current-menu-item bellows-menu-item-61475 bellows-item-level-2 bellows-current-menu-item"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-bgp-as-path-prepending" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP AS Path Prepending</span></a></li>
+		<li id="menu-item-61476" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61476 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-origin-code-attribute-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Origin Code Attribute</span></a></li>
+		<li id="menu-item-61477" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61477 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-bgp-med-attribute" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Metric (MED) Attribute</span></a></li>
+		<li id="menu-item-70376" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-70376 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-prefer-ebgp-over-ibgp" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Prefer eBGP over iBGP</span></a></li>
+		<li id="menu-item-61478" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61478 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-additional-paths" class="bellows-target"><span class="bellows-target-title bellows-target-text">BGP Additional Paths</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61471" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61471 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">4.4: Troubleshooting BGP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61479" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61479 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-bgp-neighbor-adjacency" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting BGP Neighbor Adjacency</span></a></li>
+		<li id="menu-item-61480" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61480 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-bgp-route-advertisement" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting BGP Route Advertisement</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-62514" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-62514 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 5: VPN</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-61376" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61376 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">5.1: MPLS</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61396" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61396 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/vrf-lite-configuration-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">VRF Lite Configuration</span></a></li>
+		<li id="menu-item-61397" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61397 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/vrf-lite-route-leaking" class="bellows-target"><span class="bellows-target-title bellows-target-text">VRF Lite Route Leaking</span></a></li>
+		<li id="menu-item-61481" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61481 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-mpls" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to MPLS</span></a></li>
+		<li id="menu-item-61482" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61482 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-labels-and-devices" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS Labels and Devices</span></a></li>
+		<li id="menu-item-61483" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61483 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-ldp-label-distribution-protocol" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS Label Distribution Protocol (LDP)</span></a></li>
+		<li id="menu-item-61484" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61484 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-ldp-label-filtering-example" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS LDP Label Filtering</span></a></li>
+		<li id="menu-item-61485" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61485 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-layer-3-vpn-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS Layer 3 VPN</span></a></li>
+		<li id="menu-item-61486" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61486 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-layer-3-vpn-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN Configuration</span></a></li>
+		<li id="menu-item-61487" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61487 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-layer-3-vpn-bgp-allow-as-in" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS VPN L3 BGP Allow AS-In</span></a></li>
+		<li id="menu-item-61488" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61488 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-layer-3-vpn-bgp-override" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN BGP Override</span></a></li>
+		<li id="menu-item-61489" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61489 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-layer-3-vpn-pe-ce-eigrp" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE EIGRP</span></a></li>
+		<li id="menu-item-61490" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61490 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/mpls-layer-3-vpn-pe-ce-ospf" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE OSPF</span></a></li>
+		<li id="menu-item-61491" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61491 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-over-mpls-6pe-6vpe" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 over MPLS 6PE 6VPE</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61377" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61377 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">5.2 DMVPN</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61493" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61493 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-dmvpn" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to DMVPN</span></a></li>
+		<li id="menu-item-63087" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-63087 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-1-basic-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 1 Basic Configuration</span></a></li>
+		<li id="menu-item-61495" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61495 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-1-eigrp-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 1 EIGRP Routing</span></a></li>
+		<li id="menu-item-61496" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61496 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-1-ospf-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 1 OSPF Routing</span></a></li>
+		<li id="menu-item-61494" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61494 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-1-bgp-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 1 BGP Routing</span></a></li>
+		<li id="menu-item-62569" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62569 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-2-basic-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 2 Basic Configuration</span></a></li>
+		<li id="menu-item-62570" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62570 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-2-eigrp-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 2 EIGRP Routing</span></a></li>
+		<li id="menu-item-62571" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62571 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-2-ospf-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 2 OSPF Routing</span></a></li>
+		<li id="menu-item-62572" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62572 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-2-bgp-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 2 BGP Routing</span></a></li>
+		<li id="menu-item-62573" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62573 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-3-basic-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 3 Basic Configuration</span></a></li>
+		<li id="menu-item-62574" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62574 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-3-eigrp-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 3 EIGRP Routing</span></a></li>
+		<li id="menu-item-62575" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62575 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-3-ospf-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 3 OSPF Routing</span></a></li>
+		<li id="menu-item-62576" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62576 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-phase-3-bgp-routing" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Phase 3 BGP Routing</span></a></li>
+		<li id="menu-item-62578" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62578 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-dual-hub-single-cloud" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Dual Hub Single Cloud</span></a></li>
+		<li id="menu-item-62579" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62579 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-dual-hub-dual-cloud" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN Dual Hub Dual Cloud</span></a></li>
+		<li id="menu-item-62577" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62577 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-ipv6-over-ipv4" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN IPv6 over IPv4</span></a></li>
+		<li id="menu-item-62580" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62580 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipsec-internet-protocol-security" class="bellows-target"><span class="bellows-target-title bellows-target-text">Internet Protocol Security (IPSec)</span></a></li>
+		<li id="menu-item-61497" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61497 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dmvpn-over-ipsec" class="bellows-target"><span class="bellows-target-title bellows-target-text">DMVPN over IPSec</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-61378" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61378 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 6: Infrastructure Security</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-61498" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61498 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">6.1: Device Security</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61501" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61501 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/aaa-authentication-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">AAA Authentication</span></a></li>
+		<li id="menu-item-61502" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61502 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/aaa-configuration-cisco-switch" class="bellows-target"><span class="bellows-target-title bellows-target-text">AAA Configuration on Cisco Switch</span></a></li>
+		<li id="menu-item-61503" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61503 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/aaa-local-command-authorization" class="bellows-target"><span class="bellows-target-title bellows-target-text">AAA Local Command Authorization</span></a></li>
+		<li id="menu-item-62581" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62581 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-access-lists-on-cisco-ios-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to Access-Lists (ACL)</span></a></li>
+		<li id="menu-item-61504" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61504 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/standard-access-list-example-on-cisco-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">Standard Access-List</span></a></li>
+		<li id="menu-item-61505" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61505 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/extended-access-list-example-on-cisco-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">Extended Access-List</span></a></li>
+		<li id="menu-item-61506" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61506 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-ios-time-based-access-list" class="bellows-target"><span class="bellows-target-title bellows-target-text">Time-based Access-List</span></a></li>
+		<li id="menu-item-61507" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61507 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-access-list-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 Access-List</span></a></li>
+		<li id="menu-item-62582" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62582 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-prefix-list-on-cisco-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">Prefix-Lists</span></a></li>
+		<li id="menu-item-61508" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61508 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/unicast-reverse-path-forwarding-urpf" class="bellows-target"><span class="bellows-target-title bellows-target-text">Unicast Reverse Path Forwarding (uRPF)</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61499" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61499 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">6.2: Control Plane Policing (CoPP)</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61509" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61509 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/management-plane-protection-mpp" class="bellows-target"><span class="bellows-target-title bellows-target-text">Management Plane Protection (MPP)</span></a></li>
+		<li id="menu-item-61510" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61510 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/copp-control-plane-policing" class="bellows-target"><span class="bellows-target-title bellows-target-text">Control Plane Policing (CoPP)</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61500" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61500 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">6.3: IPv6 First Hop Security</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61511" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61511 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-first-hop-security-features" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 First Hop Security Features</span></a></li>
+		<li id="menu-item-61512" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61512 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-ra-guard" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 RA Guard</span></a></li>
+		<li id="menu-item-61513" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61513 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-dhcpv6-guard" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 DHCPv6 Guard</span></a></li>
+		<li id="menu-item-61514" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61514 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-nd-inspection" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 ND Inspection</span></a></li>
+		<li id="menu-item-61515" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61515 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-source-guard" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 Source Guard</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-61379" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61379 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 7: Troubleshooting Services</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-61516" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61516 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">7.1: Device Management</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61520" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61520 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/router-security-policy" class="bellows-target"><span class="bellows-target-title bellows-target-text">Router Security Policy</span></a></li>
+		<li id="menu-item-61521" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61521 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/user-mode-and-privileged-mode-security" class="bellows-target"><span class="bellows-target-title bellows-target-text">User mode and Privileged mode Security</span></a></li>
+		<li id="menu-item-61522" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61522 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-ios-telnet-server-client" class="bellows-target"><span class="bellows-target-title bellows-target-text">Cisco IOS Telnet Server and Client</span></a></li>
+		<li id="menu-item-61523" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61523 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/configure-ssh-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">SSH Configuration</span></a></li>
+		<li id="menu-item-61524" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61524 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/upgrade-cisco-ios-image" class="bellows-target"><span class="bellows-target-title bellows-target-text">Upgrade Cisco IOS Image</span></a></li>
+		<li id="menu-item-61525" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61525 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-ios-boot-system-image" class="bellows-target"><span class="bellows-target-title bellows-target-text">Cisco IOS Boot System Image</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61517" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61517 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">7.2: SNMP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61526" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61526 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-snmp" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to SNMP</span></a></li>
+		<li id="menu-item-61527" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61527 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-snmpv2-on-cisco-ios-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">SNMPv2 Configuration</span></a></li>
+		<li id="menu-item-61528" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61528 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-snmpv3-on-cisco-ios-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">SNMPv3 Configuration</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61518" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61518 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">7.3: DHCP</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61529" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61529 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-dhcp" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to DHCP</span></a></li>
+		<li id="menu-item-61530" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61530 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/how-to-configure-dhcp-server-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCP Server</span></a></li>
+		<li id="menu-item-61533" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61533 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dhcp-client-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCP Client</span></a></li>
+		<li id="menu-item-61531" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61531 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-ios-dhcp-relay-agent" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCP Relay Agent</span></a></li>
+		<li id="menu-item-61534" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61534 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-ios-dhcp-client-identifier" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCP Client Identifier</span></a></li>
+		<li id="menu-item-61532" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61532 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/dhcp-static-binding-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCP Static Binding</span></a></li>
+		<li id="menu-item-61535" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61535 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/troubleshooting-dhcp" class="bellows-target"><span class="bellows-target-title bellows-target-text">Troubleshooting DHCP</span></a></li>
+		<li id="menu-item-61537" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61537 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-dhcpv6-server-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCPv6 Server</span></a></li>
+		<li id="menu-item-61536" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61536 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ipv6-dhcpv6-prefix-delegation" class="bellows-target"><span class="bellows-target-title bellows-target-text">DHCPv6 IPv6 Prefix Delegation</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-61519" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-61519 bellows-item-level-1"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">7.4: Network Monitoring and Performance</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+	<ul class="bellows-submenu">
+		<li id="menu-item-61538" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61538 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/configuration-change-notification-logging" class="bellows-target"><span class="bellows-target-title bellows-target-text">Configuration Change Notification Logging</span></a></li>
+		<li id="menu-item-61539" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61539 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-ios-syslog-messages" class="bellows-target"><span class="bellows-target-title bellows-target-text">Syslog Messages</span></a></li>
+		<li id="menu-item-61540" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61540 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/conditional-debug-cisco-ios-router" class="bellows-target"><span class="bellows-target-title bellows-target-text">Conditional Debug</span></a></li>
+		<li id="menu-item-61541" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61541 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/ip-sla-service-level-agreement-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">IP Service Level Agreement (SLA)</span></a></li>
+		<li id="menu-item-61542" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61542 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/reliable-static-routing-with-ip-sla" class="bellows-target"><span class="bellows-target-title bellows-target-text">IP SLA Reliable Static Routing</span></a></li>
+		<li id="menu-item-61543" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61543 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/introduction-to-cisco-netflow" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to Cisco NetFlow</span></a></li>
+		<li id="menu-item-61544" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61544 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cisco-performance-monitor" class="bellows-target"><span class="bellows-target-title bellows-target-text">Cisco Performance Monitor</span></a></li>
+		<li id="menu-item-61545" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-61545 bellows-item-level-2"><a  href="https://networklessons.com/cisco/ccnp-enarsi-300-410/cloud-connectivity" class="bellows-target"><span class="bellows-target-title bellows-target-text">Cloud Connectivity</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-62660" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-62660 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 8: Practice Exam</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-62661" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-62661 bellows-item-level-1"><a  href="https://networklessons.com/networklessons-exams" class="bellows-target"><span class="bellows-target-title bellows-target-text">CCNP ENARSI 300-410 Practice Exam</span></a></li>
+</ul>
+</li>
+</ul></nav></div>
+</div>
+		</section>    </aside>
+</div>
+
+</div><!-- end .row -->
+</div><!-- end .container -->
+<div class="container">
+<div class="row">
+
+    <div class="col-12">
+		
+		<div class="cmd_post_nav"><div class="cmd_previous"><a href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-attribute-locally-originated" rel="prev"><strong>Previous Lesson</strong><br>BGP Attribute Locally Originated</a></div><div class="cmd_next"><a href="https://networklessons.com/cisco/ccnp-enarsi-300-410/bgp-origin-code-attribute-explained" rel="next"><strong>Next Lesson</strong><br>BGP Origin Code Attribute</a></div></div>	    <p class="tags">Tags: <a href="https://networklessons.com/tag/as-path" rel="tag">AS Path</a></p>
+        <hr>
+
+		    <div id="comments" class="comments-area discourse-comments-area">
+        <h2 class="comments-title discourse-comments-title">Forum Replies</h2>
+        <ol class="comment-list">		<li class="comment even depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for system" src="https://cdn-forum.networklessons.com/uploads/default/original/1X/1d2ef66728c7fbac8377748594345a3f474fce5f.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" rel="external" class="url">system</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>It was a good article but got confusing when you mixed up Jack with John.</p></p></div>
+			</article>
+		</li>
+				<li class="comment odd depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for ReneMolenaar" src="https://cdn-forum.networklessons.com/user_avatar/forum.networklessons.com/renemolenaar/64/488_2.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" rel="external" class="url">ReneMolenaar</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Hi Tony,</p>
+<p>Thanks, I just fixed it…the names are now correct.</p>
+<p>Rene</p></p></div>
+			</article>
+		</li>
+				<li class="comment even depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for system" src="https://cdn-forum.networklessons.com/uploads/default/original/1X/1d2ef66728c7fbac8377748594345a3f474fce5f.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" rel="external" class="url">system</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>nice explanation !!!</p></p></div>
+			</article>
+		</li>
+				<li class="comment odd depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for email" src="https://cdn-forum.networklessons.com/letter_avatar_proxy/v4/letter/e/54ee81/64.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" rel="external" class="url">email</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Hello Rene,</p>
+<p>Thank you for yours articles, great job <img src="https://cdn-forum.networklessons.com/images/emoji/apple/wink.png?v=5" title=":wink:" class="emoji" alt=":wink:"> . I am beginner in learning of CCNP Routing so sorry for (probably) stupid question. In your articles missing the third attribute (Self-originated). Do you plan write about that? Thank you in advance.</p>
+<p>Daniel</p></p></div>
+			</article>
+		</li>
+				<li class="comment even depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for system" src="https://cdn-forum.networklessons.com/uploads/default/original/1X/1d2ef66728c7fbac8377748594345a3f474fce5f.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" rel="external" class="url">system</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Great example.  I do have one question: Are the prepending AS numbers arbitrary or do I have to coordinate this with my ISP.  In other words, does it matter if I use random AS prepends are do they have to be reserved just as I reserved my own AS.</p></p></div>
+			</article>
+		</li>
+		</ol>
+        <div class="respond comment-respond">
+            <p id="reply-title" class="comment-reply-title"><strong><a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" target="_blank">82 more replies!</a></strong> Ask a question or join the discussion by visiting our <a href="https://forum.networklessons.com/t/how-to-configure-bgp-as-path-prepending/954" target="_blank">Community Forum</a></p>
+        </div>
+    </div>
+        </div>
+
+
+		</div>
+	</div>
+
+	<footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="copyright">
+                    &copy; 2013 - 2024 NetworkLessons.com 57643                </div>
+                <div class="menu-footer-container"><ul id="footer-menu" class="menu"><li id="menu-item-22469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22469"><a href="https://networklessons.com/disclaimer">Disclaimer</a></li>
+<li id="menu-item-22470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-22470"><a rel="privacy-policy" href="https://networklessons.com/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-22468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22468"><a href="https://networklessons.com/support">Support</a></li>
+<li id="menu-item-59827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59827"><a href="https://networklessons.com/about-networklessons-com">About</a></li>
+</ul></div>            </div>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript">var algolia = {"debug":false,"application_id":"JYCQGPKUUY","search_api_key":"294cbcc6c53b2ccb6f80f0410f485afe","powered_by_enabled":false,"query":"","autocomplete":{"sources":[],"input_selector":"input[name='s']:not(.no-autocomplete):not(#adminbar-search)"},"indices":{"searchable_posts":{"name":"wp_searchable_posts","id":"searchable_posts","enabled":true,"replicas":[]}}};</script><link rel='stylesheet' id='tabby-css' href='https://cdn.networklessons.com/wp-content/plugins/tabby-responsive-tabs/css/tabby.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tabby-print-css' href='https://cdn.networklessons.com/wp-content/plugins/tabby-responsive-tabs/css/tabby-print.css?ver=1.4.1' type='text/css' media='print' />
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/advanced-responsive-video-embedder/build/main.js?ver=b087dd41bba279baeb77" id="arve-main-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js?ver=1.19.1" id="gtm4wp-form-move-tracker-js"></script>
+<script type="text/javascript" src="https://player.vimeo.com/api/player.js?ver=1.0" id="gtm4wp-vimeo-api-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-vimeo.js?ver=1.19.1" id="gtm4wp-vimeo-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/themes/networklessons/dist/bundle.js?ver=1702771200" id="networklessons-script-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/themes/networklessons/dist/magnific-popup/jquery.magnific-popup.min.js?ver=1.1.0" id="magnific-popup-jquery-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/themes/networklessons/dist/magnific-popup/jquery.magnific-popup.js?ver=1.1.0" id="magnific-popup-core-js-js"></script>
+<script type="text/javascript" id="wpfront-scroll-top-js-extra">
+/* <![CDATA[ */
+var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}#wpfront-scroll-top-container {right: 20px;bottom: 20px;}        #wpfront-scroll-top-container img {\n            width: auto;\n            height: auto;\n        }\n        ","html":"<div id=\"wpfront-scroll-top-container\"><img src=\"https:\/\/networklessons.com\/wp-content\/plugins\/wpfront-scroll-top\/images\/icons\/1.png\" alt=\"\" title=\"\" \/><\/div>","data":{"hide_iframe":false,"button_fade_duration":200,"auto_hide":false,"auto_hide_after":2,"scroll_offset":600,"button_opacity":0.8,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":"0","scroll_duration":400}}};
+/* ]]> */
+</script>
+<script src="https://cdn.networklessons.com/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min.js?ver=2.2.10081" id="wpfront-scroll-top-js" async="async" defer="defer"></script>
+<script type="text/javascript" id="bellows-js-extra">
+/* <![CDATA[ */
+var bellows_data = {"config":{"main":{"folding":"multiple","current":"on","slide_speed":400}},"v":"1.4.3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/bellows-pro/assets/js/bellows.min.js?ver=1.4.3" id="bellows-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/tabby-responsive-tabs/js/tabby.js?ver=1.4.1" id="tabby-js"></script>
+<script type="text/javascript" id="tabby-js-after">
+/* <![CDATA[ */
+jQuery(document).ready(function($) { RESPONSIVEUI.responsiveTabs(); })
+/* ]]> */
+</script>
+
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
