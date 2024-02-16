@@ -1,0 +1,1104 @@
+<!doctype html>
+<html lang="en-US" id="html">
+<head> 
+    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-N6QRZFG"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/favicon/apple-touch-icon-180x180.png" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+
+	const gtm4wp_scrollerscript_debugmode         = false;
+	const gtm4wp_scrollerscript_callbacktime      = 100;
+	const gtm4wp_scrollerscript_readerlocation    = 300;
+	const gtm4wp_scrollerscript_contentelementid  = "";
+	const gtm4wp_scrollerscript_scannertime       = 60;
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v21.9.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Introduction to MPLS</title>
+	<meta name="description" content="This lesson explains why we use MPLS (Multi Protocol Label Switching) and how it works." />
+	<link rel="canonical" href="https://networklessons.com/mpls/introduction-to-mpls" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Introduction to MPLS" />
+	<meta property="og:description" content="This lesson explains why we use MPLS (Multi Protocol Label Switching) and how it works." />
+	<meta property="og:url" content="https://networklessons.com/mpls/introduction-to-mpls" />
+	<meta property="og:site_name" content="NetworkLessons.com" />
+	<meta property="article:published_time" content="2015-08-12T11:34:45+00:00" />
+	<meta property="article:modified_time" content="2020-05-19T21:31:32+00:00" />
+	<meta property="og:image" content="https://cdn.networklessons.com/wp-content/uploads/2015/08/tag-blue-background.jpg" />
+	<meta property="og:image:width" content="346" />
+	<meta property="og:image:height" content="346" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Rene Molenaar" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Rene Molenaar" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="12 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://networklessons.com/mpls/introduction-to-mpls","url":"https://networklessons.com/mpls/introduction-to-mpls","name":"Introduction to MPLS","isPartOf":{"@id":"https://networklessons.com/#website"},"primaryImageOfPage":{"@id":"https://networklessons.com/mpls/introduction-to-mpls#primaryimage"},"image":{"@id":"https://networklessons.com/mpls/introduction-to-mpls#primaryimage"},"thumbnailUrl":"https://cdn.networklessons.com/wp-content/uploads/2015/08/tag-blue-background.jpg","datePublished":"2015-08-12T11:34:45+00:00","dateModified":"2020-05-19T21:31:32+00:00","author":{"@id":"https://networklessons.com/#/schema/person/a210ceb8a2b14b76e03c27d3c65850c2"},"description":"This lesson explains why we use MPLS (Multi Protocol Label Switching) and how it works.","breadcrumb":{"@id":"https://networklessons.com/mpls/introduction-to-mpls#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://networklessons.com/mpls/introduction-to-mpls"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://networklessons.com/mpls/introduction-to-mpls#primaryimage","url":"https://cdn.networklessons.com/wp-content/uploads/2015/08/tag-blue-background.jpg","contentUrl":"https://cdn.networklessons.com/wp-content/uploads/2015/08/tag-blue-background.jpg","width":346,"height":346,"caption":"tag blue background"},{"@type":"BreadcrumbList","@id":"https://networklessons.com/mpls/introduction-to-mpls#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Networklessons.com","item":"https://networklessons.com/"},{"@type":"ListItem","position":2,"name":"MPLS","item":"https://networklessons.com/mpls"},{"@type":"ListItem","position":3,"name":"Introduction to MPLS"}]},{"@type":"WebSite","@id":"https://networklessons.com/#website","url":"https://networklessons.com/","name":"NetworkLessons.com","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://networklessons.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://networklessons.com/#/schema/person/a210ceb8a2b14b76e03c27d3c65850c2","name":"Rene Molenaar","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://networklessons.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/8ff80757b1828be59e6c283e551c77be?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/8ff80757b1828be59e6c283e551c77be?s=96&d=mm&r=g","caption":"Rene Molenaar"},"description":"René - CCIE #41726 is the creator of Networklessons.com where he writes about networking topics like Cisco, Routing, Switching, Linux, Wireless &amp; Security. He also created GNS3Vault.com where people can study Cisco labs for free.","sameAs":["https://networklessons.com"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//player.vimeo.com' />
+<link rel='dns-prefetch' href='//cdn.networklessons.com' />
+<link rel='dns-prefetch' href='//googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//googleoptimize.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//tag.getdrip.com' />
+<link rel='dns-prefetch' href='//facebook.com' />
+
+<link href='https://cdn.networklessons.com' rel='preconnect' />
+<link rel='stylesheet' id='mp-theme-css' href='https://cdn.networklessons.com/wp-content/plugins/memberpress/css/ui/theme.css?ver=1.11.23' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://cdn.networklessons.com/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='arve-main-css' href='https://cdn.networklessons.com/wp-content/plugins/advanced-responsive-video-embedder/build/main.css?ver=b087dd41bba279baeb77' type='text/css' media='all' />
+<link rel='stylesheet' id='arve-pro-css' href='https://cdn.networklessons.com/wp-content/plugins/arve-pro/build/main.css?ver=09406cd2aee5447abf1a' type='text/css' media='all' />
+<link rel='stylesheet' id='cmd_post_nav-css' href='https://cdn.networklessons.com/wp-content/plugins/custom-menu-driven-prev-next-links/custom-menu-driven-prev-next-links.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='emnl_custom_styling_various_plugins-css' href='https://cdn.networklessons.com/wp-content/plugins/emnl-custom-css-various-plugins/emnl-custom-css-various-plugins.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='urlconditionalmenu-css' href='https://cdn.networklessons.com/wp-content/plugins/emnl-url-conditional-menu/url-conditional-menu.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='affwp-forms-css' href='https://cdn.networklessons.com/wp-content/plugins/affiliate-wp/assets/css/forms.min.css?ver=2.20.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css' href='https://cdn.networklessons.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.62' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 100%;}div#ez-toc-container .ez-toc-title {font-weight: 700;}div#ez-toc-container ul li {font-size: 100%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: ;}div#ez-toc-container {background: #f9f9f9;border: 1px solid #e6e6e6;}div#ez-toc-container p.ez-toc-title , #ez-toc-container .ez_toc_custom_title_icon , #ez-toc-container .ez_toc_custom_toc_icon {color: #000000;}div#ez-toc-container ul.ez-toc-list a {color: #5381b5;}div#ez-toc-container ul.ez-toc-list a:hover {color: #5381b5;}div#ez-toc-container ul.ez-toc-list a:visited {color: #5381b5;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, ".", decimal) ". ";display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<link rel='stylesheet' id='if-menu-site-css-css' href='https://cdn.networklessons.com/wp-content/plugins/if-menu/assets/if-menu-site.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='networklessons-style-css' href='https://cdn.networklessons.com/wp-content/themes/networklessons/dist/app.css?ver=1703241811' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-style-css' href='https://cdn.networklessons.com/wp-content/themes/networklessons/dist/magnific-popup/magnific-popup.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bellows-css' href='https://cdn.networklessons.com/wp-content/plugins/bellows-pro/pro/assets/css/bellows.min.css?ver=1.4.3' type='text/css' media='all' />
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-cookie-js-extra">
+/* <![CDATA[ */
+var affwp_scripts = {"ajaxurl":"https:\/\/networklessons.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/affiliate-wp/assets/js/jquery.cookie.min.js?ver=1.4.0" id="jquery-cookie-js"></script>
+<script type="text/javascript" id="affwp-tracking-js-extra">
+/* <![CDATA[ */
+var affwp_debug_vars = {"integrations":{"memberpress":"MemberPress"},"version":"2.20.0","currency":"USD","ref_cookie":"affwp_ref","visit_cookie":"affwp_ref_visit_id","campaign_cookie":"affwp_campaign"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js?ver=2.20.0" id="affwp-tracking-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/analytics-talk-content-tracking.js?ver=1.19.1" id="gtm4wp-scroll-tracking-js"></script>
+<link rel="https://api.w.org/" href="https://networklessons.com/wp-json/" /><link rel="alternate" type="application/json" href="https://networklessons.com/wp-json/wp/v2/posts/8500" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://networklessons.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel="alternate" type="application/json+oembed" href="https://networklessons.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetworklessons.com%2Fmpls%2Fintroduction-to-mpls" />
+<link rel="alternate" type="text/xml+oembed" href="https://networklessons.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetworklessons.com%2Fmpls%2Fintroduction-to-mpls&#038;format=xml" />
+<style id="bellows-custom-generated-css">
+
+/** Bellows Custom Tweaks (General Settings) **/
+
+/** Bellows Custom Tweaks (General Settings) **/
+/* More compact look of menu */
+.bellows .bellows-nav * { line-height: 1.75em; }
+.bellows .bellows-nav .bellows-submenu .bellows-target { padding-left: 20px;}
+.bellows .bellows-nav .bellows-target,
+.bellows .bellows-nav .bellows-submenu .bellows-target { padding: 2px;}
+
+/* Move toggle icons to left instead of right of text labels */
+.bellows .bellows-nav .bellows-subtoggle { width: 30px; left:0; }
+.bellows .bellows-nav .bellows-menu-item > .bellows-target > .bellows-target-text { margin-left: 30px; }
+.bellows .bellows-nav .bellows-subtoggle .fa { top: 40%; }
+
+/* Move toggle icons and lower level items to the right */
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-1 .bellows-subtoggle { left: 25px; }
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-1 .bellows-target { padding-left: 25px; }
+
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-2 .bellows-subtoggle { left: 50px; }
+.bellows .bellows-nav .bellows-submenu .bellows-item-level-2 .bellows-target { padding-left: 50px; }
+
+
+/* SIDEBAR ONLY STYLING */
+
+/* Set all text to default black */
+#sidebar .bellows .bellows-nav a.bellows-target { color: #000000 }
+
+/* Set parent menu items bold and colored */
+#sidebar .bellows.bellows-main .bellows-nav .bellows-current-menu-item > .bellows-target,
+#sidebar .bellows.bellows-main .bellows-nav .bellows-current-menu-ancestor > .bellows-target { color:#557fae; font-weight: bold; }
+
+/* Set current post bold and colored */
+#sidebar .bellows .bellows-current-menu-item { font-weight: bold; color:#557fae; }
+
+/* Toggle icons on same height */
+#sidebar .bellows .bellows-nav .bellows-subtoggle .fa { top: 44%; }
+
+
+
+/* Status: Loaded from Transient */
+
+</style>		<script type="text/javascript">
+		var AFFWP = AFFWP || {};
+		AFFWP.referral_var = 'affid';
+		AFFWP.expiration = 1;
+		AFFWP.debug = 0;
+
+
+		AFFWP.referral_credit_last = 0;
+		</script>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to manual -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"visitorLoginState":"logged-in","visitorType":"subscriber","visitorEmail":"gicrxcmznwjoxpllix@cazlg.com","visitorEmailHash":"4a598d872f4e23cd5a7677550bb37ae57864e5d2f277a9221f04a01c30fa046c","visitorId":57643,"visitorIP":"87.89.197.224","pagePostType":"post","pagePostType2":"single-post","pageCategory":["ccie-enterprise-infrastructure","ccie-routing-switching","ccie-routing-switching-written","ccna-routing-switching-icnd2-200-105","ccnp-enarsi-300-410","ccnp-route","mpls"],"IsActiveMember":"true","UserFullName":"Anass Anass"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWFSBS');
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png?v=69P4gG4Gpq">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png?v=69P4gG4Gpq">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png?v=69P4gG4Gpq">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/site.webmanifest?v=69P4gG4Gpq">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg?v=69P4gG4Gpq" color="#5381b5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico?v=69P4gG4Gpq">
+<meta name="msapplication-TileColor" content="#5381b5">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml?v=69P4gG4Gpq">
+<meta name="theme-color" content="#5381b5">		<style>
+			.algolia-search-highlight {
+				background-color: #fffbcc;
+				border-radius: 2px;
+				font-style: normal;
+			}
+		</style>
+		<script type="application/ld+json" class="emnl-schema-breadcrumbs">{"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 0,"name": "Home","item": "https://networklessons.com"},{"@type": "ListItem","position": 1,"name": "MPLS","item": "https://networklessons.com/mpls"},{"@type": "ListItem","position": 2,"name": "Introduction to MPLS","item": "https://networklessons.com/mpls/introduction-to-mpls"}]}</script>
+</head>
+
+
+<body class="post-template-default single single-post postid-8500 single-format-standard logged-in affwp-affiliate-area " data-theme="light">
+
+<!-- GTM Container placement set to manual -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWFSBS" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script>
+  if ( localStorage.getItem('siteTheme') ) {
+    document.body.setAttribute('data-theme', localStorage.getItem('siteTheme'));
+  }
+</script>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+	<header class="site-header">
+		        <div class="site-header-inner">
+            <div class="container">
+                <div class="row sm-gutters main-row">
+                    <div class="col-lg-4 col-8">
+                        <a href="https://networklessons.com/" class="logo">
+                            <img width="524" height="141" src="https://cdn.networklessons.com/wp-content/themes/networklessons/assets/images/logo.svg" alt="NetworkLessons.com" />
+                        </a>
+                    </div>
+                                                                <div class="col-lg-8 col-4 col-navigation">
+                            <nav id="site-navigation" class="main-navigation">
+                                <div class="menu-primary-container"><ul id="primary-menu" class="menu"><li id="menu-item-10143" class="expanded menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10143"><a href="https://networklessons.com/courses">Courses <span class="menu-item-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-59830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-59830"><a href="https://networklessons.com/cisco">Cisco <span class="menu-item-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-65214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65214"><a href="https://networklessons.com/cisco/ccna-200-301">CCNA 200-301</a></li>
+		<li id="menu-item-65219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65219"><a href="https://networklessons.com/cisco/ccnp-encor-350-401">CCNP ENCOR 350-401 v1.1</a></li>
+		<li id="menu-item-65218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65218"><a href="https://networklessons.com/cisco/ccnp-enarsi-300-410">CCNP ENARSI 300-410 v1.1</a></li>
+		<li id="menu-item-65217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65217"><a href="https://networklessons.com/cisco/ccie-enterprise-infrastructure">CCIE Enterprise Infrastructure</a></li>
+		<li id="menu-item-65216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65216"><a href="https://networklessons.com/cisco/asa-firewall">ASA Firewall</a></li>
+		<li id="menu-item-65774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65774"><a href="https://networklessons.com/cisco/cisco-sd-wan">Cisco SD-WAN</a></li>
+	</ul>
+</li>
+	<li id="menu-item-59831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-59831"><a href="https://networklessons.com/routing-switching">Routing &#038; Switching <span class="menu-item-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-65232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65232"><a href="https://networklessons.com/subnetting">Subnetting</a></li>
+		<li id="menu-item-65233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65233"><a href="https://networklessons.com/switching">Switching</a></li>
+		<li id="menu-item-65231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65231"><a href="https://networklessons.com/spanning-tree">Spanning-Tree</a></li>
+		<li id="menu-item-65222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65222"><a href="https://networklessons.com/frame-relay">Frame-Relay</a></li>
+		<li id="menu-item-65230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65230"><a href="https://networklessons.com/rip">RIP</a></li>
+		<li id="menu-item-65221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65221"><a href="https://networklessons.com/eigrp">EIGRP</a></li>
+		<li id="menu-item-65227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65227"><a href="https://networklessons.com/ospf">OSPF</a></li>
+		<li id="menu-item-65224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65224"><a href="https://networklessons.com/is-is">IS-IS</a></li>
+		<li id="menu-item-65215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65215"><a href="https://networklessons.com/bgp">BGP</a></li>
+		<li id="menu-item-65226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65226"><a href="https://networklessons.com/multicast">Multicast</a></li>
+		<li id="menu-item-65223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65223"><a href="https://networklessons.com/ipv6">IPv6</a></li>
+		<li id="menu-item-65229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65229"><a href="https://networklessons.com/quality-of-service">Quality of Service</a></li>
+		<li id="menu-item-65225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65225"><a href="https://networklessons.com/mpls">MPLS</a></li>
+	</ul>
+</li>
+	<li id="menu-item-65228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65228"><a href="https://networklessons.com/python">Python</a></li>
+	<li id="menu-item-65234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65234"><a href="https://networklessons.com/uncategorized">Miscellaneous</a></li>
+	<li id="menu-item-64907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64907"><a href="#">Legacy <span class="menu-item-toggle"></span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-33774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33774"><a href="https://networklessons.com/cisco/ccna-routing-switching-icnd1-100-105">CCNA R&#038;S ICND1 100-105</a></li>
+		<li id="menu-item-40575" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-40575"><a href="https://networklessons.com/cisco/ccna-routing-switching-icnd2-200-105">CCNA R&#038;S ICND2 200-105</a></li>
+		<li id="menu-item-20090" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20090"><a href="https://networklessons.com/cisco/ccnp-route">CCNP ROUTE</a></li>
+		<li id="menu-item-20092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20092"><a href="https://networklessons.com/cisco/ccnp-switch">CCNP SWITCH</a></li>
+		<li id="menu-item-20093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20093"><a href="https://networklessons.com/cisco/ccnp-tshoot">CCNP TSHOOT</a></li>
+		<li id="menu-item-20089" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20089"><a href="https://networklessons.com/cisco/ccie-routing-switching">CCIE R&#038;S</a></li>
+		<li id="menu-item-38428" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-38428"><a href="https://networklessons.com/cisco/ccie-routing-switching-written">CCIE R&#038;S Written</a></li>
+		<li id="menu-item-65220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65220"><a href="https://networklessons.com/cisco/evolving-technologies">Evolving Technologies</a></li>
+	</ul>
+</li>
+	<li id="menu-item-8339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8339"><a href="https://networklessons.com/new-lessons"><i class="fa fa-plus"></i> New Lessons</a></li>
+	<li id="menu-item-64135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64135"><a href="https://networklessons.com/updated-lessons"><i class="fas fa-pen"></i> Updated Lessons</a></li>
+	<li id="menu-item-7347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7347"><a href="https://networklessons.com/member-ideas"><i class="fa fa-lightbulb-o"></i> Lesson Ideas</a></li>
+</ul>
+</li>
+<li id="menu-item-8715" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8715"><a href="https://forum.networklessons.com">Forum</a></li>
+<li id="menu-item-23483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23483"><a href="https://networklessons.com/support">Support</a></li>
+<li id="menu-item-65967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65967"><a href="#">Tools <span class="menu-item-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-65968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65968"><a href="https://www.cloudshark.org/collections/WTRpgLI-GQSDfgzkQixICg">Packet Captures</a></li>
+	<li id="menu-item-65969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65969"><a href="https://notes.networklessons.com">Notes</a></li>
+	<li id="menu-item-65970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65970"><a href="https://networklessons.com/tools-and-resources">Resources</a></li>
+	<li id="menu-item-68327" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68327"><a href="https://networklessons.com/networklessons-exams">Practice Exams</a></li>
+</ul>
+</li>
+<li id="menu-item-22148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22148"><a href="#"><i class="fa fa-user"></i> <span class="menu-item-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-5629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5629"><a href="https://networklessons.com/myaccount">My Account Settings</a></li>
+	<li id="menu-item-68092" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68092"><a href="https://networklessons.com/member-dashboard">Member Dashboard</a></li>
+	<li id="menu-item-22285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22285"><a href="https://networklessons.com/upgrade-to-annual-membership"><b><font color="#FFC469">UPGRADE TO ANNUAL &#038; Get 2 Months FREE!</font></b></a></li>
+	<li id="menu-item-56969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56969"><a href="https://networklessons.com/wp-login.php?action=logout">Logout</a></li>
+</ul>
+</li>
+</ul></div>                                <div class="main-navigation-close">
+                                    <i class="far fa-times"></i>
+                                </div>
+                            </nav>
+                            <div class="main-navigation-toggle">
+                                <span class="icon"></span>
+                            </div>
+                            <div class="d-none d-xl-block">
+                                
+
+<form role="search" method="get" class="search-form" action="https://networklessons.com/">
+    <label for="search-form-65b28d62a1be2" class="sr-only">
+        <span class="screen-reader-text">Search for:</span>
+    </label>
+
+    <div class="input-group">
+        <input type="search" id="search-form-65b28d62a1be2" class="search-field form-control" placeholder="Search &hellip;" value="" name="s" />
+        <div class="input-group-append">
+            <button type="submit" class="search-submit btn btn-white">
+                <span class="screen-reader-text">Search</span>
+                <i class="far fa-search"></i>
+            </button>
+        </div>
+    </div>
+</form>                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="fullpage-overlay main-navigation-overlay"></div>
+	</header>
+    
+            <div class="d-xl-none">
+            
+
+<form role="search" method="get" class="search-form" action="https://networklessons.com/">
+    <label for="search-form-65b28d62a1c95" class="sr-only">
+        <span class="screen-reader-text">Search for:</span>
+    </label>
+
+    <div class="input-group">
+        <input type="search" id="search-form-65b28d62a1c95" class="search-field form-control" placeholder="Search &hellip;" value="" name="s" />
+        <div class="input-group-append">
+            <button type="submit" class="search-submit btn btn-white">
+                <span class="screen-reader-text">Search</span>
+                <i class="far fa-search"></i>
+            </button>
+        </div>
+    </div>
+</form>        </div>
+    
+	<div class="site-content container">
+    <div class="breadcrumbs" style="font-size: 12px;">You are here: <a href="https://networklessons.com">Home</a> » <a href="https://networklessons.com/mpls">MPLS</a></div>	<div class="site-content-row row">
+	<div id="primary" class="content-area col-md-8">
+		<main id="main" class="site-main">
+                            <div class="site-actions-toolbar d-md-none">
+                    <div class="site-action js--dark-mode">
+                        <i class="far fa-adjust"></i>
+                    </div>
+                </div>
+            
+		
+<article id="post-8500" class="main-post post-8500 post type-post status-publish format-standard has-post-thumbnail hentry category-ccie-enterprise-infrastructure category-ccie-routing-switching category-ccie-routing-switching-written category-ccna-routing-switching-icnd2-200-105 category-ccnp-enarsi-300-410 category-ccnp-route category-mpls">
+	<header class="entry-header">
+                            <h1 class="entry-title">Introduction to MPLS</h1>        	</header>
+	<div class="entry-content">
+                    <div class="the-content">
+                <div id="ez-toc-container" class="ez-toc-v2_0_62 counter-hierarchy ez-toc-counter ez-toc-custom ez-toc-container-direction">
+<div class="ez-toc-title-container"><p class="ez-toc-title">Lesson Contents</p>
+</div><nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Why_do_we_need_MPLS" title="Why do we need MPLS?">Why do we need MPLS?</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="#Tunnel_between_PE_routers" title="Tunnel between PE routers">Tunnel between PE routers</a><ul class='ez-toc-list-level-4' ><li class='ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-3" href="#OSPF_Configuration" title="OSPF Configuration">OSPF Configuration</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-4" href="#eBGP_Configuration" title="eBGP Configuration">eBGP Configuration</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-5" href="#GRE_Tunnel_Configuration" title="GRE Tunnel Configuration">GRE Tunnel Configuration</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-6" href="#iBGP_Configuration" title="iBGP Configuration">iBGP Configuration</a></li><li class='ez-toc-page-1 ez-toc-heading-level-4'><a class="ez-toc-link ez-toc-heading-7" href="#Verification" title="Verification">Verification</a></li></ul></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#What_is_MPLS" title="What is MPLS?">What is MPLS?</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#iBGP_configuration" title="iBGP configuration">iBGP configuration</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#MPLS_Configuration" title="MPLS Configuration">MPLS Configuration</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-11" href="#Verification-2" title="Verification">Verification</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-12" href="#Conclusion" title="Conclusion">Conclusion</a></li></ul></nav></div>
+<p>To understand MPLS there are two questions we need to answer:</p>
+<ul>
+<li>What is MPLS?</li>
+<li>Why do we need MPLS?</li>
+</ul>
+<p>I&#8217;m going to start this lesson with an explanation of why we need it and how MPLS solves some of the issues of other protocols, this will help you to understand why we use MPLS. In the second part of this lesson you will learn what MPLS is and how it actually works.</p>
+<p>When you want to learn MPLS, you need to be very familiar with the following topics before you continue:</p>
+<ul>
+<li>IGPs (like <a href="https://networklessons.com/ospf" target="_blank" rel="noopener noreferrer">OSPF</a> and <a href="https://networklessons.com/eigrp-lessons/" target="_blank" rel="noopener noreferrer">EIGRP</a>)</li>
+<li>Tunneling (<a href="https://networklessons.com/tag/gre/how-to-configure-gre-tunnel-on-cisco-ios-router" target="_blank" rel="noopener noreferrer">GRE</a>)</li>
+<li><a href="https://networklessons.com/cisco/ccie-routing-switching-written/cef-cisco-express-forwarding" target="_blank" rel="noopener noreferrer">CEF (Cisco Express Forwarding)</a></li>
+<li><a href="https://networklessons.com/bgp" target="_blank" rel="noopener noreferrer">BGP (Border Gateway Protocol)</a></li>
+</ul>
+<p>Having said that, let&#8217;s get started!</p>
+<h2><span class="ez-toc-section" id="Why_do_we_need_MPLS"></span>Why do we need MPLS?<span class="ez-toc-section-end"></span></h2>
+<p>Take a look at the following picture:</p>
+<p><img fetchpriority="high" decoding="async" class="alignnone wp-image-8518 size-full" src="https://cdn.networklessons.com/wp-content/uploads/2015/08/large-isp-two-customers-ce-pe-p-routers.png" alt="large isp two customers ce pe p routers" width="1409" height="571" srcset="https://cdn.networklessons.com/wp-content/uploads/2015/08/large-isp-two-customers-ce-pe-p-routers.png 1409w, https://cdn.networklessons.com/wp-content/uploads/2015/08/large-isp-two-customers-ce-pe-p-routers-300x122.png 300w, https://cdn.networklessons.com/wp-content/uploads/2015/08/large-isp-two-customers-ce-pe-p-routers-1024x415.png 1024w" sizes="(max-width: 1409px) 100vw, 1409px" /></p>
+<p>Above we have an example of an ISP with two customers called &#8220;A&#8221; and &#8220;B&#8221;. The ISP only offers Internet connectivity and no other services. Each customer uses the ISP to have connectivity between their sites.</p>
+<p>To accomplish our goal, the ISP is running eBGP between the CE (Customer Edge) and PE (Provider Edge) to exchange prefixes. This means all internal (P) routers of the ISP have to run <a href="https://networklessons.com/mpls/internal-bgp-border-gateway-protocol-explained">iBGP</a> or they don&#8217;t know where to forward their packets to.</p>
+<p>A full internet routing table currently has &gt; 500.000 prefixes and with 8 ISP routers running iBGP, we need 28 iBGP peerings. We can reduce this number by using <a href="https://networklessons.com/tag/ibgp/bgp-route-reflector" target="_blank" rel="noopener noreferrer">route reflectors</a> or a <a href="https://networklessons.com/tag/ibgp/bgp-confederation-explained" target="_blank" rel="noopener noreferrer">confederation</a>. All routers have to do lookups in the routing table for any possible destination.</p>
+<p>Now here&#8217;s something to think about&#8230;when our goal is to have connectivity between two customer sites, why should all internal P routers know about this? The only routers that need to know how to reach the customer sites are the PE routers of the provider. Why not build a tunnel between the PE routers? Take a look at the picture below:</p>
+<p><img decoding="async" class="alignnone wp-image-8519 size-full" src="https://cdn.networklessons.com/wp-content/uploads/2015/08/isp-gre-tunnel-customer-sites.png" alt="ISP Gre Tunnel Customer Sites" width="1409" height="571" srcset="https://cdn.networklessons.com/wp-content/uploads/2015/08/isp-gre-tunnel-customer-sites.png 1409w, https://cdn.networklessons.com/wp-content/uploads/2015/08/isp-gre-tunnel-customer-sites-300x122.png 300w, https://cdn.networklessons.com/wp-content/uploads/2015/08/isp-gre-tunnel-customer-sites-1024x415.png 1024w" sizes="(max-width: 1409px) 100vw, 1409px" /></p>
+<p>In the picture above I added two GRE tunnels:</p>
+<ul>
+<li>The two PE routers at the top will use a GRE tunnel for the customer A sites.</li>
+<li>The two PE routers at the bottom will use a GRE tunnel for the customer B sites.</li>
+</ul>
+<p>With a solution like this, we can have a <strong>BGP free core</strong>! There&#8217;s only two places where we need BGP:</p>
+<ul>
+<li>eBGP between the PE and CE router.</li>
+<li>iBGP between two PE routers.</li>
+</ul>
+<p>Let&#8217;s take a closer look at the solution I described above.</p>
+<h3><span class="ez-toc-section" id="Tunnel_between_PE_routers"></span>Tunnel between PE routers<span class="ez-toc-section-end"></span></h3>
+<p>Let&#8217;s take a look at the example above in action. I will use the following topology for this:</p>
+<p><img decoding="async" class="alignnone size-full wp-image-34015" src="https://cdn.networklessons.com/wp-content/uploads/2015/08/mpls-pe-ce-gre-tunnel-as-1234.png" alt="mpls pe ce gre tunnel as 1234" width="611" height="747" srcset="https://cdn.networklessons.com/wp-content/uploads/2015/08/mpls-pe-ce-gre-tunnel-as-1234.png 611w, https://cdn.networklessons.com/wp-content/uploads/2015/08/mpls-pe-ce-gre-tunnel-as-1234-245x300.png 245w" sizes="(max-width: 611px) 100vw, 611px" /></p>
+<p>The topology above is a smaller version of the topology I showed you before. This is the ISP with only one customer. We&#8217;ll use a GRE tunnel between PE1 and PE2 so that we don&#8217;t need iBGP on the P router. Let me walk you through the entire configuration&#8230;</p>
+<h4><span class="ez-toc-section" id="OSPF_Configuration"></span>OSPF Configuration<span class="ez-toc-section-end"></span></h4>
+<p>First we will configure OSPF on all ISP routes so that PE1 and PE2 are able to reach each other. I&#8217;ve added some loopback interfaces on the ISP routers that will be advertised as well:</p>
+<pre><code>PE1(config)#<strong>router ospf 1</strong>
+PE1(config-router)#<strong>network 192.168.23.0 0.0.0.255 area 0</strong>
+PE1(config-router)#<strong>network 2.2.2.2 0.0.0.0 area 0</strong></code></pre>
+<pre><code>P(config)#<strong>router ospf  1  </strong>    
+P(config-router)#<strong>network 192.168.23.0 0.0.0.255 area 0</strong>
+P(config-router)#<strong>network 192.168.34.0 0.0.0.255 area 0</strong>
+P(config-router)#<strong>network 3.3.3.3 0.0.0.0 area 0</strong></code></pre>
+<pre><code>PE2(config)#<strong>router ospf 1</strong>
+PE2(config-router)#<strong>network 192.168.34.0 0.0.0.255 area 0</strong>
+PE2(config-router)#<strong>network 4.4.4.4 0.0.0.0 area 0</strong></code></pre>
+<p>That takes care of all internal routing for the ISP.</p>
+<h4><span class="ez-toc-section" id="eBGP_Configuration"></span>eBGP Configuration<span class="ez-toc-section-end"></span></h4>
+<p>Let&#8217;s continue by configuring eBGP between the CE and PE routers. We will advertise a loopback on each CE router:</p>
+<pre><code>CE1(config)#<strong>router bgp 10</strong>
+CE1(config-router)#<strong>neighbor 192.168.12.2 remote-as 1234</strong>
+CE1(config-router)#<strong>network 1.1.1.1 mask 255.255.255.255</strong></code></pre>
+<pre><code>PE1(config)#<strong>router bgp 1234</strong>
+PE1(config-router)#<strong>neighbor 192.168.12.1 remote-as 10</strong></code></pre>
+<pre><code>PE2(config)#<strong>router bgp 1234</strong>
+PE2(config-router)#<strong>neighbor 192.168.45.5 remote-as 20</strong></code></pre>
+<pre><code>CE2(config)#<strong>router bgp 20</strong>
+CE2(config-router)#<strong>neighbor 192.168.45.4 remote-as 1234 </strong>  
+CE2(config-router)#<strong>network 5.5.5.5 mask 255.255.255.255</strong></code></pre>
+<p>That takes care of eBGP.</p>
+<h4><span class="ez-toc-section" id="GRE_Tunnel_Configuration"></span>GRE Tunnel Configuration<span class="ez-toc-section-end"></span></h4>
+<p>Now we can configure the GRE tunnel between PE1 and PE2. I will use their loopback interfaces as the source and destination. We will use the 192.168.24.0 /24 subnet on the tunnel interfaces:</p>
+<pre><code>PE1(config)#<strong>interface tunnel 0</strong>
+PE1(config-if)#<strong>tunnel source 2.2.2.2</strong>
+PE1(config-if)#<strong>tunnel destination 4.4.4.4</strong>
+PE1(config-if)#<strong>ip address 192.168.24.2 255.255.255.0</strong></code></pre>
+<pre><code>PE2(config)#<strong>interface tunnel 0</strong>
+PE2(config-if)#<strong>tunnel source 4.4.4.4</strong>
+PE2(config-if)#<strong>tunnel destination 2.2.2.2</strong>
+PE2(config-if)#<strong>ip address 192.168.24.4 255.255.255.0</strong></code></pre>
+<p>Now we have a working GRE tunnel.</p>
+<h4><span class="ez-toc-section" id="iBGP_Configuration"></span>iBGP Configuration<span class="ez-toc-section-end"></span></h4>
+<p>With the GRE tunnel up and running, we can configure iBGP between the two PE routers:</p>
+<pre><code>PE1(config)#<strong>router bgp 1234</strong>
+PE1(config-router)#<strong>neighbor 192.168.24.4 remote-as 1234</strong>
+PE1(config-router)#<strong>neighbor 192.168.24.4 next-hop-self</strong></code></pre>
+<pre><code>PE2(config)#<strong>router bgp 1234</strong>
+PE2(config-router)#<strong>neighbor 192.168.24.2 remote-as 1234</strong>
+PE2(config-router)#<strong>neighbor 192.168.24.2 next-hop-self</strong></code></pre>
+<p>Our PE routers will establish an iBGP peering using the IP addresses on the GRE tunnel.</p>
+<div class="notice-box  note   ">I also could have established iBGP between the loopback interfaces of PE1 and PE2 instead of the IP addresses of the tunnel interfaces. The advantage is that BGP traffic between PE1 and PE2 wouldn&#8217;t be encapsulated by GRE. The downside however is that you will need to configure a route-map that changes the next hop IP address of all prefixes learned through BGP to the IP addresses of the tunnel interfaces.</div>
+<p>Our configuration is now complete. Let&#8217;s find out if it works shall we?</p>
+<h4><span class="ez-toc-section" id="Verification"></span>Verification<span class="ez-toc-section-end"></span></h4>
+<p>I&#8217;ll do a trace from CE1 to CE2:</p>
+<pre><code>CE1#<strong>traceroute 5.5.5.5 source loopback 0</strong>
+Type escape sequence to abort.
+Tracing the route to 5.5.5.5
+VRF info: (vrf in name/id, vrf out name/id)
+  1 192.168.12.2 0 msec 0 msec 0 msec
+  2 192.168.24.4 0 msec 0 msec 4 msec
+  3 192.168.45.5 0 msec 0 msec *</code></pre>
+<p>Great, it&#8217;s working! The ISP has a BGP-free core. Here&#8217;s what an IP packet  from CE1 to CE2 looks like to the P router:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-8505" src="https://cdn.networklessons.com/wp-content/uploads/2015/08/wireshark-capture-gre-icmp1.png" alt="wireshark capture gre icmp" width="765" height="130" srcset="https://cdn.networklessons.com/wp-content/uploads/2015/08/wireshark-capture-gre-icmp1.png 765w, https://cdn.networklessons.com/wp-content/uploads/2015/08/wireshark-capture-gre-icmp1-300x51.png 300w" sizes="(max-width: 765px) 100vw, 765px" /></p>
+<p>The outer IP header has source address 2.2.2.2 and destination address 4.4.4.4, the P router knows how to route these since it learned these addresses through OSPF.<br />
+<div class="responsive-tabs">
+<p class="tabtitle">Configurations</p>
+<div class="tabcontent">
+</p>
+<p>Want to take a look for yourself? Here you will find the final configuration of each device.</p>
+
+</div><p class="tabtitle">CE1</p>
+<div class="tabcontent">
+
+<pre><code>hostname CE1
+!
+ip cef
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.12.1 255.255.255.0
+!
+router bgp 10
+ bgp log-neighbor-changes
+ network 1.1.1.1 mask 255.255.255.255
+ neighbor 192.168.12.2 remote-as 1234
+!
+end</code></pre>
+
+</div><p class="tabtitle">CE2</p>
+<div class="tabcontent">
+
+<pre><code>hostname CE2
+!
+ip cef
+!
+interface Loopback0
+ ip address 5.5.5.5 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.45.5 255.255.255.0
+!
+router bgp 20
+ bgp log-neighbor-changes
+ network 5.5.5.5 mask 255.255.255.255
+ neighbor 192.168.45.4 remote-as 1234
+!
+control-plane
+!
+end</code></pre>
+
+</div><p class="tabtitle">P</p>
+<div class="tabcontent">
+
+<pre><code>hostname P
+!
+ip cef
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.23.3 255.255.255.0
+!
+interface GigabitEthernet0/2
+ ip address 192.168.34.3 255.255.255.0
+!
+router ospf 1
+ network 192.168.23.0 0.0.0.255 area 0
+ network 192.168.34.0 0.0.0.255 area 0
+!
+end</code></pre>
+
+</div><p class="tabtitle">PE1</p>
+<div class="tabcontent">
+
+<pre><code>hostname PE1
+!
+ip cef
+!
+interface Loopback0
+ ip address 2.2.2.2 255.255.255.255
+!
+interface Tunnel0
+ ip address 192.168.24.2 255.255.255.0
+ tunnel source 2.2.2.2
+ tunnel destination 4.4.4.4
+!
+interface GigabitEthernet0/1
+ ip address 192.168.12.2 255.255.255.0
+!
+interface GigabitEthernet0/2
+ ip address 192.168.23.2 255.255.255.0
+!
+router ospf 1
+ network 2.2.2.2 0.0.0.0 area 0
+ network 192.168.23.0 0.0.0.255 area 0
+!
+router bgp 1234
+ bgp log-neighbor-changes
+ neighbor 192.168.12.1 remote-as 10
+ neighbor 192.168.24.4 remote-as 1234
+ neighbor 192.168.24.4 next-hop-self
+!
+end</code></pre>
+
+</div><p class="tabtitle">PE2</p>
+<div class="tabcontent">
+
+<pre><code>hostname PE2
+!
+ip cef
+!
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+!
+interface Tunnel0
+ ip address 192.168.24.4 255.255.255.0
+ tunnel source 4.4.4.4
+ tunnel destination 2.2.2.2
+!
+interface GigabitEthernet0/1
+ ip address 192.168.45.4 255.255.255.0
+!
+interface GigabitEthernet0/2
+ ip address 192.168.34.4 255.255.255.0
+!
+router ospf 1
+ network 4.4.4.4 0.0.0.0 area 0
+ network 192.168.34.0 0.0.0.255 area 0
+!
+router bgp 1234
+ bgp log-neighbor-changes
+ neighbor 192.168.24.2 remote-as 1234
+ neighbor 192.168.24.2 next-hop-self
+ neighbor 192.168.45.5 remote-as 20
+!
+end</code></pre>
+<p></div></div><br />
+Great! Now you might be thinking&#8230;so what? Where&#8217;s MPLS?</p>
+<p>For now, keep in mind that <strong>tunneling is used to create a BGP free core</strong>. Hold this thought while you read the next section of this lesson where we finally start talking about MPLS!</p>
+<h2><span class="ez-toc-section" id="What_is_MPLS"></span>What is MPLS?<span class="ez-toc-section-end"></span></h2>
+<p>In the previous example I used a GRE tunnel but I could have used any tunneling mechanism. Besides GRE, there&#8217;s IP-in-IP, Q-in-Q and&#8230;</p>
+<p><strong>MPLS (Multi Protocol Label Switching)</strong>.</p>
+<p>What does multi protocol label switching mean?</p>
+<ul>
+<li><strong>Multi protocol</strong>: besides IP you can tunnel pretty much anything&#8230;IP, IPv6, Ethernet, PPP, frame-relay, etc.</li>
+<li><strong>Label switching</strong>: forwarding is done based on labels, not by looking up the destination in the routing table.</li>
+</ul>
+<p>MPLS can do anything that any of the other tunneling protocols support and it can do a lot more than that.</p>
+<p>Let&#8217;s start with something simple, let&#8217;s replace the GRE tunnel from the previous example with MPLS so I can explain how MPLS uses labels.</p>
+<p>First let&#8217;s get rid of the GRE tunnel and the BGP peering between PE1 and PE2:</p>
+<pre><code>PE1 &amp; PE2
+(config)#<strong>no interface tunnel 0</strong></code></pre>
+<pre><code>PE1(config)#<strong>router bgp 1234</strong>
+PE1(config-router)#<strong>no neighbor 192.168.24.4 remote-as 1234</strong></code></pre>
+<pre><code>PE2(config)#<strong>router bgp 1234</strong>
+PE2(config-router)#<strong>no neighbor 192.168.24.2 remote-as 1234</strong></code></pre>
+<p>Now we can start with the MPLS configuration.</p>
+<h3><span class="ez-toc-section" id="iBGP_configuration"></span>iBGP configuration<span class="ez-toc-section-end"></span></h3>
+<p>Once again I will configure iBGP between PE1 and PE2 but this time I will use their loopback interfaces. You will see why in a minute:</p>
+<pre><code>PE1(config)#<strong>router bgp 1234</strong>
+PE1(config-router)#<strong>neighbor 4.4.4.4 remote-as 1234</strong>
+PE1(config-router)#<strong>neighbor 4.4.4.4 update-source loopback 0</strong>
+PE1(config-router)#<strong>neighbor 4.4.4.4 next-hop-self</strong></code></pre>
+<pre><code>PE2(config)#<strong>router bgp 1234</strong>
+PE2(config-router)#<strong>neighbor 2.2.2.2 remote-as 1234</strong>
+PE2(config-router)#<strong>neighbor 2.2.2.2 update-source loopback 0</strong>
+PE2(config-router)#<strong>neighbor 2.2.2.2 next-hop-self</strong> </code></pre>
+<p>That takes care of iBGP.</p>
+<h3><span class="ez-toc-section" id="MPLS_Configuration"></span>MPLS Configuration<span class="ez-toc-section-end"></span></h3>
+<p>This is the exciting part, let&#8217;s enable MPLS. We&#8217;ll do this on all interfaces that connect PE1, PE2 and the P router:</p>
+<pre><code>PE1(config)#<strong>interface GigabitEthernet 0/2</strong>
+PE1(config-if)#<strong>mpls ip</strong></code></pre>
+<pre><code>P(config)#<strong>interface GigabitEthernet 0/1</strong>
+P(config-if)#<strong>mpls ip</strong></code></pre>
+<pre><code>P(config)#<strong>interface GigabitEthernet 0/2</strong>
+P(config-if)#<strong>mpls ip</strong></code></pre>
+<pre><code>PE2(config)#<strong>interface GigabitEthernet 0/2</strong>
+PE2(config-if)#<strong>mpls ip</strong></code></pre>
+<p>That&#8217;s pretty simple&#8230;only one command to activate MPLS on our interfaces. In the next lesson I will explain what exactly happens when you use this command, for now I want to focus on the labels.</p>
+<h3><span class="ez-toc-section" id="Verification-2"></span>Verification<span class="ez-toc-section-end"></span></h3>
+<p>Let&#8217;s try a quick ping between CE1 and CE2:</p>
+<pre><code>CE1#<strong>ping 5.5.5.5 source loopback 0</strong>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 5.5.5.5, timeout is 2 seconds:
+Packet sent with a source address of 1.1.1.1 
+!!!!!
+<span style="color: #ff0000;">Success rate is 100 percent (5/5)</span>, round-trip min/avg/max = 1/2/4 ms</code></pre>
+<p>Great, it works. Why does it work? Keep in mind there is no iBGP on the P router:</p>
+<pre><code>P#<strong>show ip cef 5.5.5.5</strong>
+0.0.0.0/0
+  <span style="color: #ff0000;">no route</span></code></pre>
+<p>Normally this traffic should be dropped since this router has no idea how it can reach 5.5.5.5. However, since we enabled MPLS we are now using labels for our forwarding decisions. Let me explain how that works.</p>
+<p>Let&#8217;s start with PE1:</p>
+<pre><code>PE1#<strong>show ip route 5.5.5.5</strong>
+Routing entry for 5.5.5.5/32
+  Known via "bgp 1234", distance 200, metric 0
+  Tag 5, type internal
+  Last update from <span style="color: #ff0000;">4.4.4.4</span> 00:20:16 ago
+  Routing Descriptor Blocks:
+  * 4.4.4.4, from 4.4.4.4, 00:20:16 ago
+      Route metric is 0, traffic share count is 1
+      AS Hops 1
+      Route tag 5
+      MPLS label: none</code></pre>
+<p>To reach 5.5.5.5, we have to use 4.4.4.4 as the next hop. Instead of checking the routing table, let&#8217;s take a look at the MPLS forwarding table:</p>
+<pre><code>PE1#<strong>show mpls forwarding-table</strong> 
+Local      <span style="color: #ff0000;">Outgoing</span>   Prefix           Bytes Label   Outgoing   Next Hop    
+Label      <span style="color: #ff0000;">Label</span>      or Tunnel Id     Switched      interface              
+16         <span style="color: #ff0000;">17</span>         <span style="color: #ff0000;">4.4.4.4/32</span>       0             <span style="color: #ff0000;">Gi0/2</span>      192.168.23.3
+17         Pop Label  192.168.34.0/24  0             Gi0/2      192.168.23.3
+18         Pop Label  3.3.3.3/32       0             Gi0/2      192.168.23.3</code></pre>
+<p>Above you can see the labels that this router uses to reach certain prefixes. In the next lesson we&#8217;ll discuss how these labels are generated. To reach 4.4.4.4, this router will add label 17 to the IP packet and forwards it on GigabitEthernet 0/2 (towards the P router). A quicker method to see what labels are used for different prefixes is by checking the CEF table:</p>
+<pre><code>PE1#<strong>show ip cef 5.5.5.5</strong>
+5.5.5.5/32
+  nexthop 192.168.23.3 GigabitEthernet0/2 <span style="color: #ff0000;">label 17</span></code></pre>
+<p>Here&#8217;s a capture of the IP packet that PE1 sends to the P router:</p>
+<p><img loading="lazy" decoding="async" class="alignnone size-full wp-image-8510" src="https://cdn.networklessons.com/wp-content/uploads/2015/08/wireshark-capture-mpls-encapsulated-icmp.png" alt="wireshark capture mpls encapsulated icmp" width="886" height="430" srcset="https://cdn.networklessons.com/wp-content/uploads/2015/08/wireshark-capture-mpls-encapsulated-icmp.png 886w, https://cdn.networklessons.com/wp-content/uploads/2015/08/wireshark-capture-mpls-encapsulated-icmp-300x146.png 300w" sizes="(max-width: 886px) 100vw, 886px" /></p>
+<p>You can see that the MPLS header has been added in between the Ethernet and IP header. This is why they call MPLS a layer 2.5 protocol.</p>
+<p>So what happens when the P router receives this IP packet? It&#8217;s using MPLS for forwarding decisions so let&#8217;s take a look at its labels:</p>
+<pre><code>P#<strong>show mpls forwarding-table</strong> 
+<span style="color: #ff0000;">Local</span>      <span style="color: #ff0000;">Outgoing</span>   Prefix           Bytes Label   Outgoing   Next Hop    
+<span style="color: #ff0000;">Label</span>      <span style="color: #ff0000;">Label</span>      or Tunnel Id     Switched      interface              
+16         Pop Label  2.2.2.2/32       152492        Gi0/1      192.168.23.2
+<span style="color: #ff0000;">17</span>         <span style="color: #ff0000;">Pop Label</span>  <span style="color: #ff0000;">4.4.4.4/32</span>       153234        <span style="color: #ff0000;">Gi0/2</span>      192.168.34.4</code></pre>
+<p>When the P router receives something that is tagged with label 17, then it has to be forwarded to 4.4.4.4. It&#8217;s outgoing label says &#8220;pop label&#8221; which means to remove the label.</p>
+<p>PE2 will receive a regular IP packet (without label) with destination 5.5.5.5 and it will forward it using the routing table towards CE2.</p>
+<p>When CE2 receives the packet, it will create an ICMP echo reply which will end up at PE2. Here&#8217;s what PE2 will do with it:</p>
+<pre><code>PE2#<strong>show ip route 1.1.1.1</strong>
+Routing entry for 1.1.1.1/32
+  Known via "bgp 1234", distance 200, metric 0
+  Tag 1, type internal
+  Last update from 2.2.2.2 00:31:34 ago
+  Routing Descriptor Blocks:
+  * 2.2.2.2, from 2.2.2.2, 00:31:34 ago
+      Route metric is 0, traffic share count is 1
+      AS Hops 1
+      Route tag 1
+      MPLS label: none</code></pre>
+<p>PE2 knows that it has to use next hop 2.2.2.2 to reach 1.1.1.1. Let&#8217;s check what label we will use to reach 2.2.2.2:</p>
+<pre><code>PE2#<strong>show mpls forwarding-table</strong> 
+Local      <span style="color: #ff0000;">Outgoing</span>   Prefix           Bytes Label   <span style="color: #ff0000;">Outgoing</span>   Next Hop    
+Label      <span style="color: #ff0000;">Label</span>      or Tunnel Id     Switched      <span style="color: #ff0000;">interface</span>              
+16         <span style="color: #ff0000;">16</span>         <span style="color: #ff0000;">2.2.2.2/32</span>       0             <span style="color: #ff0000;">Gi0/2</span>      192.168.34.3
+17         Pop Label  192.168.23.0/24  0             Gi0/2      192.168.34.3
+18         Pop Label  3.3.3.3/32       0             Gi0/2      192.168.34.3</code></pre>
+<p>PE2 will add label 16 to the IP packet and will forward it out the GigabitEthernet 0/2 interface towards the P router. Looking at the CEF table is a quicker method to find the label for a destination prefix:</p>
+<pre><code>PE2#<strong>show ip cef 1.1.1.1</strong>
+1.1.1.1/32
+  nexthop 192.168.34.3 GigabitEthernet0/2 <span style="color: #ff0000;">label 16</span></code></pre>
+<p>The PE2 router will forward it to the P router. Let&#8217;s check what it will do with this packet:</p>
+<pre><code>P#<strong>show mpls forwarding-table</strong> 
+<span style="color: #ff0000;">Local</span>      <span style="color: #ff0000;">Outgoing</span>   <span style="color: #ff0000;">Prefix</span>           Bytes Label   <span style="color: #ff0000;">Outgoing</span>   Next Hop    
+<span style="color: #ff0000;">Label</span>      <span style="color: #ff0000;">Label</span>      <span style="color: #ff0000;">or Tunnel Id</span>     Switched      <span style="color: #ff0000;">interface</span>              
+<span style="color: #ff0000;">16</span>         <span style="color: #ff0000;">Pop Label</span>  <span style="color: #ff0000;">2.2.2.2/32</span>       154767        <span style="color: #ff0000;">Gi0/1</span>      192.168.23.2
+17         Pop Label  4.4.4.4/32       155528        Gi0/2      192.168.34.4</code></pre>
+<p>Router P sees that anything with label 16 should be forwarded on the GigabitEthernet 0/1 interface. It will remove the label and forwards it to PE1.</p>
+<p>PE1 can then forward the IP packet (without label) using its routing table to CE1.</p>
+<p>That&#8217;s how we use MPLS to tunnel traffic between PE routers, creating a <em>BGP free core</em>.<br />
+<div class="responsive-tabs">
+<p class="tabtitle">Configurations</p>
+<div class="tabcontent">
+</p>
+<p>Want to take a look for yourself? Here you will find the startup configuration of each device.</p>
+
+</div><p class="tabtitle">CE1</p>
+<div class="tabcontent">
+
+<pre><code>hostname CE1
+!
+ip cef
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.12.1 255.255.255.0
+!
+router bgp 10
+ bgp log-neighbor-changes
+ network 1.1.1.1 mask 255.255.255.255
+ neighbor 192.168.12.2 remote-as 1234
+!
+end</code></pre>
+
+</div><p class="tabtitle">CE2</p>
+<div class="tabcontent">
+
+<pre><code>hostname CE2
+!
+ip cef
+!
+interface Loopback0
+ ip address 5.5.5.5 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.45.5 255.255.255.0
+!
+router bgp 20
+ bgp log-neighbor-changes
+ network 5.5.5.5 mask 255.255.255.255
+ neighbor 192.168.45.4 remote-as 1234
+!
+end</code></pre>
+
+</div><p class="tabtitle">P</p>
+<div class="tabcontent">
+
+<pre><code>hostname P
+!
+ip cef
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.23.3 255.255.255.0
+ mpls ip
+!
+interface GigabitEthernet0/2
+ ip address 192.168.34.3 255.255.255.0
+ mpls ip
+!
+router ospf 1
+ network 3.3.3.3 0.0.0.0 area 0
+ network 192.168.23.0 0.0.0.255 area 0
+ network 192.168.34.0 0.0.0.255 area 0
+!
+end</code></pre>
+
+</div><p class="tabtitle">PE1</p>
+<div class="tabcontent">
+
+<pre><code>hostname PE1
+!
+ip cef
+!
+interface Loopback0
+ ip address 2.2.2.2 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.12.2 255.255.255.0
+!
+interface GigabitEthernet0/2
+ ip address 192.168.23.2 255.255.255.0
+ mpls ip
+!
+router ospf 1
+ network 2.2.2.2 0.0.0.0 area 0
+ network 192.168.23.0 0.0.0.255 area 0
+!
+router bgp 1234
+ bgp log-neighbor-changes
+ neighbor 4.4.4.4 remote-as 1234
+ neighbor 4.4.4.4 update-source Loopback0
+ neighbor 4.4.4.4 next-hop-self
+ neighbor 192.168.12.1 remote-as 10
+!
+end</code></pre>
+
+</div><p class="tabtitle">PE2</p>
+<div class="tabcontent">
+
+<pre><code>hostname PE2
+!
+ip cef
+!
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+!
+interface GigabitEthernet0/1
+ ip address 192.168.45.4 255.255.255.0
+!
+interface GigabitEthernet0/2
+ ip address 192.168.34.4 255.255.255.0
+ mpls ip
+!
+router ospf 1
+ network 4.4.4.4 0.0.0.0 area 0
+ network 192.168.34.0 0.0.0.255 area 0
+!
+router bgp 1234
+ bgp log-neighbor-changes
+ neighbor 2.2.2.2 remote-as 1234
+ neighbor 2.2.2.2 update-source Loopback0
+ neighbor 2.2.2.2 next-hop-self
+ neighbor 192.168.45.5 remote-as 20
+!
+end</code></pre>
+</div></div>
+<h2><span class="ez-toc-section" id="Conclusion"></span>Conclusion<span class="ez-toc-section-end"></span></h2>
+<p>I hope this lesson has been useful to get a basic understanding of why we use MPLS and how it uses labels as a tunneling mechanism to create a BGP free core. There&#8217;s a lot more to this story. In other lessons you will learn:</p>
+<ul>
+<li>How MPLS routers generate/exchange labels using LDP.</li>
+<li>How to build MPLS VPNs</li>
+<li>How to tunnel Ethernet or frame-relay over your MPLS network.</li>
+<li>And more&#8230;</li>
+</ul>
+<p>If you have any questions, feel free to leave a comment in our forum.</p>
+            </div>
+                	</div>
+</article>
+		</main>
+	</div>
+
+
+<div class="widget-area col-md-4">
+            <div class="site-actions-toolbar d-none d-md-flex">
+            <div class="site-action js--dark-mode">
+                <i class="far fa-adjust"></i>
+            </div>
+        </div>
+        <aside id="secondary">
+        <section id="text-6" class="widget widget_text">			<div class="textwidget"><div class="urlspecificmenu-toggle">Lessons</div><div class="fullpage-overlay urlspecificmenu-overlay"></div><div class="urlspecificmenu"><div class="urlspecificmenu-close"><i class="far fa-times"></i></div>
+				<h2>Course Contents</h2><p>MPLS</p><nav id="bellows-main-637" class="bellows bellows-nojs bellows-main bellows-source-menu bellows-align-full bellows-skin-none bellows-type-accordion bellows-expand-current"><ul id="menu-mpls" class="bellows-nav" data-bellows-config="main"><li id="menu-item-24936" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-current-menu-ancestor bellows-current-menu-parent bellows-menu-item-has-children bellows-menu-item-24936 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 1: Introduction</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-18760" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-current-menu-item bellows-menu-item-18760 bellows-item-level-1 bellows-current-menu-item"><a  href="https://networklessons.com/mpls/introduction-to-mpls" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to MPLS</span></a></li>
+	<li id="menu-item-18761" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18761 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-labels-and-devices" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS Labels and Devices</span></a></li>
+</ul>
+</li>
+<li id="menu-item-24939" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-24939 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 2: LDP (Label Distribution Protocol)</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-18762" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18762 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-ldp-label-distribution-protocol" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS LDP (Label Distribution Protocol)</span></a></li>
+	<li id="menu-item-18763" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18763 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-ldp-label-filtering-example" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS LDP Label Filtering</span></a></li>
+</ul>
+</li>
+<li id="menu-item-24937" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-24937 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 3: MPLS VPN</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-18764" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18764 bellows-item-level-1"><a  href="https://networklessons.com/mpls/vrf-lite-configuration-on-cisco-ios" class="bellows-target"><span class="bellows-target-title bellows-target-text">VRFs (Virtual Routing and Forwarding)</span></a></li>
+	<li id="menu-item-18765" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18765 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-explained" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN Explained</span></a></li>
+	<li id="menu-item-18766" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18766 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN Configuration</span></a></li>
+	<li id="menu-item-20537" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-20537 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-bgp-allow-as-in" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN BGP Allow AS in</span></a></li>
+	<li id="menu-item-20538" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-20538 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-bgp-override" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN BGP AS Override</span></a></li>
+	<li id="menu-item-18767" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18767 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-pe-ce-rip" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE RIP</span></a></li>
+	<li id="menu-item-18768" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18768 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-pe-ce-eigrp" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE EIGRP</span></a></li>
+	<li id="menu-item-18769" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18769 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-pe-ce-ospf" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE OSPF</span></a></li>
+	<li id="menu-item-65287" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-65287 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-vpn-pe-ce-ospf-default-route" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE OSPF Default Route</span></a></li>
+	<li id="menu-item-65344" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-65344 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-vpn-pe-ce-ospf-global-default-route" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE OSPF Global Default Route</span></a></li>
+	<li id="menu-item-47319" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-47319 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-layer-3-vpn-pe-ce-ospf-sham-link" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS L3 VPN PE-CE OSPF Sham Link</span></a></li>
+	<li id="menu-item-55069" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-55069 bellows-item-level-1"><a  href="https://networklessons.com/mpls/vrf-lite-route-leaking" class="bellows-target"><span class="bellows-target-title bellows-target-text">VRF Lite Route Leaking</span></a></li>
+	<li id="menu-item-54975" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-54975 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-vpn-extranet-route-leaking" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS VPN Extranet Route Leaking</span></a></li>
+	<li id="menu-item-54981" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-54981 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-vpn-vrf-export-map" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS VPN VRF Export Map</span></a></li>
+	<li id="menu-item-54995" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-54995 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-vpn-vrf-import-map" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS VPN VRF Import Map</span></a></li>
+	<li id="menu-item-64862" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-64862 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-over-flexvpn" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS over FlexVPN</span></a></li>
+</ul>
+</li>
+<li id="menu-item-24938" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-24938 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 4: MPLS L2 Encapsulation</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-18770" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-18770 bellows-item-level-1"><a  href="https://networklessons.com/mpls/any-transport-over-mpls-atom" class="bellows-target"><span class="bellows-target-title bellows-target-text">AToM (Any Transport over MPLS)</span></a></li>
+</ul>
+</li>
+<li id="menu-item-55703" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-55703 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 5: IPv6 MPLS</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-55702" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-55702 bellows-item-level-1"><a  href="https://networklessons.com/mpls/ipv6-over-mpls-6pe-6vpe" class="bellows-target"><span class="bellows-target-title bellows-target-text">IPv6 over MPLS 6PE/6VPE</span></a></li>
+</ul>
+</li>
+<li id="menu-item-67654" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-has-children bellows-menu-item-67654 bellows-item-level-0"><span  class="bellows-target"><span class="bellows-target-title bellows-target-text">Unit 6: MPLS Traffic Engineering (TE)</span><button class="bellows-subtoggle" aria-label="Toggle Submenu"><i class="bellows-subtoggle-icon-expand fa fa-plus-square"></i><i class="bellows-subtoggle-icon-collapse fa fa-minus-square"></i></button></span>
+<ul class="bellows-submenu">
+	<li id="menu-item-69525" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-69525 bellows-item-level-1"><a  href="https://networklessons.com/mpls/introduction-to-mpls-traffic-engineering-te" class="bellows-target"><span class="bellows-target-title bellows-target-text">Introduction to MPLS Traffic Engineering (TE)</span></a></li>
+	<li id="menu-item-67653" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67653 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-traffic-engineering-te-is-is-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS Traffic Engineering (TE) IS-IS Configuration</span></a></li>
+	<li id="menu-item-69631" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-69631 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-traffic-engineering-te-ospf-configuration" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS Traffic Engineering (TE) OSPF Configuration</span></a></li>
+	<li id="menu-item-69616" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-69616 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-rsvp-te" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE RSVP-TE</span></a></li>
+	<li id="menu-item-68084" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68084 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-static-routes" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Static Routes</span></a></li>
+	<li id="menu-item-68320" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68320 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-policy-based-routing-pbr" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Policy Based Routing (PBR)</span></a></li>
+	<li id="menu-item-68113" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68113 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-autoroute-announce" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Autoroute Announce</span></a></li>
+	<li id="menu-item-68160" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68160 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-autoroute-destination" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Autoroute Destination</span></a></li>
+	<li id="menu-item-68448" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68448 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-autoroute-metric" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Autoroute Metric</span></a></li>
+	<li id="menu-item-68508" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68508 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-unequal-cost-load-balancing" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Unequal Cost Load Balancing</span></a></li>
+	<li id="menu-item-68595" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68595 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-load-balancing-between-igp-and-te" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Load Balancing between IGP and TE</span></a></li>
+	<li id="menu-item-68347" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68347 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-forwarding-adjacency" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Forwarding Adjacency</span></a></li>
+	<li id="menu-item-67697" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67697 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-path-options-explicit" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Path Options Explicit</span></a></li>
+	<li id="menu-item-68226" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68226 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-class-based-tunnel-selection-cbts" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Class-Based Tunnel Selection (CBTS)</span></a></li>
+	<li id="menu-item-67717" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67717 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-metric" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Metric</span></a></li>
+	<li id="menu-item-68390" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68390 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-tunnel-setup-and-hold-priority" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Setup and Hold Priority</span></a></li>
+	<li id="menu-item-68047" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68047 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-affinity-attribute" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Attribute Flag and Affinity</span></a></li>
+	<li id="menu-item-67728" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67728 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-tunnel-reoptimization" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Reoptimization</span></a></li>
+	<li id="menu-item-67944" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67944 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-traffic-engineering-te-fast-reroute-frr" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Fast Reroute (FRR)</span></a></li>
+	<li id="menu-item-67889" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67889 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-fast-reroute-path-link-protection" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Fast Reroute Path Link Protection</span></a></li>
+	<li id="menu-item-67925" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-67925 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-fast-reroute-path-node-protection" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Fast Reroute Path Node Protection</span></a></li>
+	<li id="menu-item-68002" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68002 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-frr-rsvp-hello-support" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE FRR RSVP Hello Support</span></a></li>
+	<li id="menu-item-68707" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68707 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-diffserv-aware-ds-te-traditional" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE DiffServ Aware (DS-TE) Traditional</span></a></li>
+	<li id="menu-item-68747" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68747 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-diffserv-aware-ds-te-ietf-mode" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Diffserv-Aware (DS-TE) IETF Mode</span></a></li>
+	<li id="menu-item-68819" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-68819 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-vpn-over-mpls-te-tunnels" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS VPN over MPLS TE Tunnels</span></a></li>
+	<li id="menu-item-69548" class="bellows-menu-item bellows-menu-item-type-custom bellows-menu-item-object-custom bellows-menu-item-69548 bellows-item-level-1"><a  href="https://networklessons.com/mpls/mpls-te-per-vrf-te-tunnel" class="bellows-target"><span class="bellows-target-title bellows-target-text">MPLS TE Per VRF TE tunnel</span></a></li>
+</ul>
+</li>
+</ul></nav></div>
+</div>
+		</section>    </aside>
+</div>
+
+</div><!-- end .row -->
+</div><!-- end .container -->
+<div class="container">
+<div class="row">
+
+    <div class="col-12">
+		
+		<div class="cmd_post_nav"><div class="cmd_next"><a href="https://networklessons.com/mpls/mpls-labels-and-devices" rel="next"><strong>Next Lesson</strong><br>MPLS Labels and Devices</a></div></div>	    
+        <hr>
+
+		    <div id="comments" class="comments-area discourse-comments-area">
+        <h2 class="comments-title discourse-comments-title">Forum Replies</h2>
+        <ol class="comment-list">		<li class="comment even depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for dreamtfk" src="https://cdn-forum.networklessons.com/user_avatar/forum.networklessons.com/dreamtfk/64/180_2.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" rel="external" class="url">dreamtfk</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>I am a bit confused when you say “BGP free core”. If we are using iBGP between the PE routers then how can it still be a BGP free core? Or does this simply mean there is no BGP process running on the ‘P’ router?</p></p></div>
+			</article>
+		</li>
+				<li class="comment odd depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for ReneMolenaar" src="https://cdn-forum.networklessons.com/user_avatar/forum.networklessons.com/renemolenaar/64/488_2.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" rel="external" class="url">ReneMolenaar</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Hi Emir,</p>
+<p>That’s right, the P routers form the “core” of the ISP network. Only the PE (provider edge) routers will require iBGP.</p>
+<p>Rene</p></p></div>
+			</article>
+		</li>
+				<li class="comment even depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for dreamtfk" src="https://cdn-forum.networklessons.com/user_avatar/forum.networklessons.com/dreamtfk/64/180_2.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" rel="external" class="url">dreamtfk</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Great, thanks.</p></p></div>
+			</article>
+		</li>
+				<li class="comment odd depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for mangatoea" src="https://cdn-forum.networklessons.com/letter_avatar_proxy/v4/letter/m/34f0e0/64.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" rel="external" class="url">mangatoea</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Good mpls intro,thanks Rene! ,  i will lab this one for sure <img src="https://cdn-forum.networklessons.com/images/emoji/apple/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p></p></div>
+			</article>
+		</li>
+				<li class="comment even depth-1">
+			<article class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="Avatar for ReneMolenaar" src="https://cdn-forum.networklessons.com/user_avatar/forum.networklessons.com/renemolenaar/64/488_2.png" class="avatar avatar-64 photo avatar-default" height="64" width="64">
+						<b class="fn"><a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" rel="external" class="url">ReneMolenaar</a></b>
+						<span class="says screen-reader-text">says:</span><!-- screen reader text -->
+					</div>
+					<div class="comment-metadata">
+						<time datetime=""></time>
+					</div>
+				</footer>
+				<div class="comment-content"><p><p>Trying this yourself is a good idea <img src="https://cdn-forum.networklessons.com/images/emoji/apple/slight_smile.png?v=5" title=":slight_smile:" class="emoji" alt=":slight_smile:">  Tomorrow I’ll work on the MPLS LDP tutorial, that will explain where the labels come etc.</p></p></div>
+			</article>
+		</li>
+		</ol>
+        <div class="respond comment-respond">
+            <p id="reply-title" class="comment-reply-title"><strong><a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" target="_blank">168 more replies!</a></strong> Ask a question or join the discussion by visiting our <a href="https://forum.networklessons.com/t/introduction-to-mpls/1282" target="_blank">Community Forum</a></p>
+        </div>
+    </div>
+        </div>
+
+
+		</div>
+	</div>
+
+	<footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="copyright">
+                    &copy; 2013 - 2024 NetworkLessons.com 57643                </div>
+                <div class="menu-footer-container"><ul id="footer-menu" class="menu"><li id="menu-item-22469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22469"><a href="https://networklessons.com/disclaimer">Disclaimer</a></li>
+<li id="menu-item-22470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-22470"><a rel="privacy-policy" href="https://networklessons.com/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-22468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22468"><a href="https://networklessons.com/support">Support</a></li>
+<li id="menu-item-59827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59827"><a href="https://networklessons.com/about-networklessons-com">About</a></li>
+</ul></div>            </div>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript">var algolia = {"debug":false,"application_id":"JYCQGPKUUY","search_api_key":"294cbcc6c53b2ccb6f80f0410f485afe","powered_by_enabled":false,"query":"","autocomplete":{"sources":[],"input_selector":"input[name='s']:not(.no-autocomplete):not(#adminbar-search)"},"indices":{"searchable_posts":{"name":"wp_searchable_posts","id":"searchable_posts","enabled":true,"replicas":[]}}};</script><link rel='stylesheet' id='tabby-css' href='https://cdn.networklessons.com/wp-content/plugins/tabby-responsive-tabs/css/tabby.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tabby-print-css' href='https://cdn.networklessons.com/wp-content/plugins/tabby-responsive-tabs/css/tabby-print.css?ver=1.4.1' type='text/css' media='print' />
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/advanced-responsive-video-embedder/build/main.js?ver=b087dd41bba279baeb77" id="arve-main-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js?ver=1.19.1" id="gtm4wp-form-move-tracker-js"></script>
+<script type="text/javascript" src="https://player.vimeo.com/api/player.js?ver=1.0" id="gtm4wp-vimeo-api-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-vimeo.js?ver=1.19.1" id="gtm4wp-vimeo-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/themes/networklessons/dist/bundle.js?ver=1702771200" id="networklessons-script-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/themes/networklessons/dist/magnific-popup/jquery.magnific-popup.min.js?ver=1.1.0" id="magnific-popup-jquery-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/themes/networklessons/dist/magnific-popup/jquery.magnific-popup.js?ver=1.1.0" id="magnific-popup-core-js-js"></script>
+<script type="text/javascript" id="wpfront-scroll-top-js-extra">
+/* <![CDATA[ */
+var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}#wpfront-scroll-top-container {right: 20px;bottom: 20px;}        #wpfront-scroll-top-container img {\n            width: auto;\n            height: auto;\n        }\n        ","html":"<div id=\"wpfront-scroll-top-container\"><img src=\"https:\/\/networklessons.com\/wp-content\/plugins\/wpfront-scroll-top\/images\/icons\/1.png\" alt=\"\" title=\"\" \/><\/div>","data":{"hide_iframe":false,"button_fade_duration":200,"auto_hide":false,"auto_hide_after":2,"scroll_offset":600,"button_opacity":0.8,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":"0","scroll_duration":400}}};
+/* ]]> */
+</script>
+<script src="https://cdn.networklessons.com/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min.js?ver=2.2.10081" id="wpfront-scroll-top-js" async="async" defer="defer"></script>
+<script type="text/javascript" id="bellows-js-extra">
+/* <![CDATA[ */
+var bellows_data = {"config":{"main":{"folding":"multiple","current":"on","slide_speed":400}},"v":"1.4.3"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/bellows-pro/assets/js/bellows.min.js?ver=1.4.3" id="bellows-js"></script>
+<script type="text/javascript" src="https://cdn.networklessons.com/wp-content/plugins/tabby-responsive-tabs/js/tabby.js?ver=1.4.1" id="tabby-js"></script>
+<script type="text/javascript" id="tabby-js-after">
+/* <![CDATA[ */
+jQuery(document).ready(function($) { RESPONSIVEUI.responsiveTabs(); })
+/* ]]> */
+</script>
+
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
